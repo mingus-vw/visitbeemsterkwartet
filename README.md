@@ -1,2 +1,2 @@
 # visitbeemsterkwartet
-Kwartet spel voor Visit Beemster
+Kwartet spel voor Visit Beemster door Mingus en Marai
