@@ -36,6 +36,7 @@ https://trello.com/b/qevw1g7e/visit-beemster-kwartet
 ## Database Design
 
 
+
 ## Planning
 
 - Week: shows the week.
