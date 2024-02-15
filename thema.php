@@ -111,7 +111,6 @@
             <div class="modal-body">
                 <h1>Producten uit de Beemster</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Card 1 -->
                     <div class="col" style="max-width: 15rem;">
                         <div class="card .h-100">
                             <img src="images/kaas.jpg" class="card-img-top" alt="...">
@@ -122,7 +121,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2 - Bier -->
                     <div class="col" style="max-width: 15rem;">
                         <div class="card .h-100">
                             <img src="images/bier.jpg" class="card-img-top" alt="...">
@@ -165,7 +163,6 @@
     </div>
 </div>
 
-
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -189,9 +186,6 @@
         });
     });
 </script>
-
-
-
 </body>
 
 </html>
