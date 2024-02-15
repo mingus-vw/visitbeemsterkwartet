@@ -75,5 +75,5 @@ https://trello.com/b/qevw1g7e/visit-beemster-kwartet
 
 ## Wireframe
 
-![Wireframe](assets/wireframe.png)
+![Wireframe](/assets/wireframe.png)
 
