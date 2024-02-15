@@ -33,10 +33,6 @@ https://trello.com/b/qevw1g7e/visit-beemster-kwartet
 - Node.Js
 - Markdown
 
-## Database Design
-
-
-
 ## Planning
 
 - Week: shows the week.
@@ -79,4 +75,5 @@ https://trello.com/b/qevw1g7e/visit-beemster-kwartet
 
 ## Wireframe
 
-![Alt text](image.png)
+![Wireframe](assets/wireframe.png)
+
