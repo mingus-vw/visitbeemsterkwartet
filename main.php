@@ -69,11 +69,6 @@
     .wrapper img:nth-child(7n+1) {
         grid-column: 2/span 2;
     }
-
-    .wrapper img:hover {
-        z-index: 2;
-        transform: scale(1.05);
-    }
     </style>
 
     <div class="wrapper">
