@@ -78,13 +78,21 @@
 }
     </style>
 
-    <div class="wrapper">
-        <img src="images/half_rood_links.svg" alt="...">
-        <img src="images/vlakje_rood.svg" alt="...">
-        <img src="images/vlakje_rood.svg" alt="...">
-        <img src="images/half_rood_rechts.svg" alt="...">
-
-     </div>
+<div class="wrapper">
+  <img src="images/Vlakje_groen.svg" alt="...">
+  <img src="images/Vlakje_groen.svg" alt="...">
+  <img src="images/Vlakje_groen.svg" alt="...">
+  <img src="images/Vlakje_geel.svg" alt="...">
+  <img src="images/Vlakje_geel.svg" alt="...">
+  <img src="images/Vlakje_geel.svg" alt="...">
+  <img src="images/Vlakje_rood.svg" alt="...">
+  <img src="images/Vlakje_rood.svg" alt="...">
+  <img src="images/Vlakje_rood.svg" alt="...">
+  <img src="images/Vlakje_blauw.svg" alt="...">
+  <img src="images/Vlakje_blauw.svg" alt="...">
+  <img src="images/Vlakje_blauw.svg" alt="...">
+  <img src="images/Vlakje_blauw.svg" alt="...">
+</div>
 
 
 
