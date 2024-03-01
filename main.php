@@ -61,6 +61,7 @@
     <div class="wrapper">
         <img src="images/half_rood_links.svg" alt="...">
         <img src="images/vlakje_rood.svg" alt="...">
+        <img src="images/vlakje_rood.svg" alt="...">
         <img src="images/half_rood_rechts.svg" alt="...">
 
      </div>
