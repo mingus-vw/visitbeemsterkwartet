@@ -48,6 +48,26 @@
         transition: all 0.25s;
     }
 
+    .wrapper img.half_links {
+            margin-bottom: -52%;
+            z-index: 1;
+            grid-column: span 2;
+            max-width: 100%;
+            transform: scale(1);
+            transition: all 0.25s;
+            clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        }
+
+        .wrapper img.half_rechts {
+            margin-bottom: -52%;
+            z-index: 1;
+            grid-column: span 2;
+            max-width: 100%;
+            transform: scale(1);
+            transition: all 0.25s;
+            clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+        }
+
     .wrapper img:nth-child(7n+1) {
         grid-column: 2/span 2;
     }
