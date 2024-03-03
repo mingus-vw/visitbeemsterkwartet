@@ -3,53 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-    body {
-        font-family: arial;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    .wrapper {
-        position: relative;
-        flex-grow: 1;
-        margin: auto;
-        max-width: auto;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        grid-gap: 15px;
-        justify-content: center;
-        align-items: center;
-    }
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            height: 600px;
+        }
 
-    .wrapper img {
-        z-index: 1;
-        grid-column: span 2;
-        max-width: 100%;
-        margin-bottom: -52%;
-        /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
-        transform: scale(1);
-        transition: all 0.25s;
-    }
+        ul li {
+            list-style: none;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            transform: rotate(45deg);
+            transition: .5s;
+            margin: -100px;
+        }
 
-    .wrapper img:nth-child(7n+1) {
-        grid-column: 2/span 2;
-    }
+        ul li.item1 {
+            top: 0;
+            left: 0;
+        }
 
-    .wrapper img:hover {
-  z-index: 2;
-  transform: scale(1.1);
-}
+        ul li.item2 {
+            top: 0;
+            left: 50%;
+        }
+
+        ul li.item3 {
+            top: 0;
+            left: 100%;
+        }
+
+        ul li.item4 {
+            top: 50%;
+            left: 0;
+        }
+
+        ul li.item5 {
+            top: 50%;
+            left: 50%;
+        }
+
+        ul li.item6 {
+            top: 50%;
+            left: 100%;
+        }
+
+        ul li.item7 {
+            top: 100%;
+            left: 0;
+        }
+
+        ul li.item8 {
+            top: 100%;
+            left: 50%;
+        }
+
+        ul li.item9 {
+            top: 100%;
+            left: 100%;
+        }
+
+        /* Additional rhombuses for the gaps */
+        ul li.item10 {
+            top: 25%;
+            left: 25%;
+        }
+
+        ul li.item11 {
+            top: 25%;
+            left: 75%;
+        }
+
+        ul li.item12 {
+            top: 75%;
+            left: 25%;
+        }
+
+        ul li.item13 {
+            top: 75%;
+            left: 75%;
+        }
     </style>
 </head>
 <body>
-<div class="wrapper">
-<img src="images/half_rood_links.svg" alt="...">
-<img src="images/half_rood_links.svg" alt="...">
-</div>
+    <ul>
+        <li class="item1"><div class="bg"></div></li>
+        <li class="item2"><div class="bg"></div></li>
+        <li class="item3"><div class="bg"></div></li>
+        <li class="item4"><div class="bg"></div></li>
+        <li class="item5"><div class="bg"></div></li>
+        <li class="item6"><div class="bg"></div></li>
+        <li class="item7"><div class="bg"></div></li>
+        <li class="item8"><div class="bg"></div></li>
+        <li class="item9"><div class="bg"></div></li>
+        
+        <!-- Additional rhombuses for the gaps -->
+        <li class="item10"><div class="bg"></div></li>
+        <li class="item11"><div class="bg"></div></li>
+        <li class="item12"><div class="bg"></div></li>
+        <li class="item13"><div class="bg"></div></li>
+    </ul>
 </body>
 </html>
