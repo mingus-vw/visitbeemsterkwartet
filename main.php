@@ -26,7 +26,7 @@
             margin: auto;
             max-width: auto;
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: repeat(9, 1fr);
             grid-template-rows: repeat(10, 1fr);
             grid-gap: 15px;
             justify-content: center;
@@ -42,18 +42,17 @@
             transition: all 0.25s;
         }
 
-        .wrapper img:nth-child(8n+1),
-        .wrapper img:nth-child(8n) {
-            clip-path: polygon(50% 0%, 0 50%, 50% 100%, 50% 50%);
-            
+        .half-left,
+        .half-right {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
 
-        .wrapper img:nth-child(8n+1) {
+        .half-left {
             grid-column: 1 / span 2;
             clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 100% 50%);
         }
 
-        .wrapper img:nth-child(8n) {
+        .half-right {
             grid-column: 7 / span 2;
             clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0 50%);
         }
@@ -66,26 +65,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <img src="images/half_rood_links.svg" alt="...">
+        <img src="images/half_rood_links.svg" alt="..." class="half-left">
         <img src="images/vlakje_rood.svg" alt="...">
         <img src="images/vlakje_rood.svg" alt="...">
-        <img src="images/half_rood_rechts.svg" alt="...">
-        <img src="images/half_rood_links.svg" alt="...">
-        <img src="images/vlakje_rood.svg" alt="...">
-        <img src="images/vlakje_rood.svg" alt="...">
-        <img src="images/half_rood_rechts.svg" alt="...">
-        <img src="images/half_groen_links.svg" alt="...">
+        <img src="images/half_rood_rechts.svg" alt="..." class="half-right">
+        <img src="images/half_groen_links.svg" alt="..." class="half-left">
         <img src="images/vlakje_groen.svg" alt="...">
         <img src="images/vlakje_groen.svg" alt="...">
-        <img src="images/half_groen_rechts.svg" alt="...">
-        <img src="images/half_geel_links.svg" alt="...">
+        <img src="images/half_groen_rechts.svg" alt="..." class="half-right">
+        <img src="images/half_geel_links.svg" alt="..." class="half-left">
         <img src="images/vlakje_geel.svg" alt="...">
         <img src="images/vlakje_geel.svg" alt="...">
-        <img src="images/half_geel_rechts.svg" alt="...">
-        <img src="images/half_blauw_links.svg" alt="...">
+        <img src="images/half_geel_rechts.svg" alt="..." class="half-right">
+        <img src="images/half_blauw_links.svg" alt="..." class="half-left">
         <img src="images/vlakje_blauw.svg" alt="...">
         <img src="images/vlakje_blauw.svg" alt="...">
-        <img src="images/half_blauw_rechts.svg" alt="...">
+        <img src="images/half_blauw_rechts.svg" alt="..." class="half-right">
     </div>
 </body>
 </html>
