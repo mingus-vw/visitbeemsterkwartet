@@ -1,106 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style link="stylesheet" href="style.css"></style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-</head>
-
-<body>
-
     <style>
-    body {
-        font-family: arial;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        max-width: 100%;
-    }
+        body {
+            font-family: arial;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            max-width: 100%;
+        }
 
-    .wrapper {
-        position: relative;
-        flex-grow: 1;
-        margin: auto;
-        max-width: auto;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        grid-gap: 15px;
-        justify-content: center;
-        align-items: center;
-    }
+        .wrapper {
+            position: relative;
+            flex-grow: 1;
+            margin: auto;
+            max-width: auto;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .wrapper img {
-        z-index: 1;
-        grid-column: span 2;
-        max-width: 100%;
-        margin-bottom: -52%;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        transform: scale(1);
-        transition: all 0.25s;
-    }
-
-    /* .wrapper img.half_links {
-    z-index: 1;
-    grid-column: span 2;
-    max-width: 30%; 
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    margin-bottom: -40%; 
-}
-
-.wrapper img.half_rechts {
-            margin-bottom: -52%;
+        .wrapper img {
             z-index: 1;
             grid-column: span 2;
             max-width: 100%;
+            margin-bottom: -52%;
             transform: scale(1);
             transition: all 0.25s;
-            clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
-        } */
+        }
 
-    .wrapper img:nth-child(7n+1) {
-        grid-column: 2/span 2;
-    }
+        .wrapper img:nth-child(8n+1),
+        .wrapper img:nth-child(8n) {
+            clip-path: polygon(50% 0%, 0 50%, 50% 100%, 50% 50%);
+            
+        }
 
-    .wrapper img:hover {
-  z-index: 2;
-  transform: scale(1.1);
-}
+        .wrapper img:nth-child(8n+1) {
+            grid-column: 1 / span 2;
+            clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 100% 50%);
+        }
+
+        .wrapper img:nth-child(8n) {
+            grid-column: 7 / span 2;
+            clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0 50%);
+        }
+
+        .wrapper img:hover {
+            z-index: 2;
+            transform: scale(1.1);
+        }
     </style>
-
-<div class="wrapper">
-<!-- <img class="half_links" src="images/half_rood_links.svg" alt="..."> -->
-  <img src="images/vlakje_rood.svg" alt="...">
-  <img src="images/vlakje_rood.svg" alt="...">
-  <img src="images/vlakje_rood.svg" alt="...">
-  <img src="images/vlakje_groen.svg" alt="...">
-  <img src="images/vlakje_groen.svg" alt="...">
-  <img src="images/vlakje_groen.svg" alt="...">
-  <img src="images/vlakje_groen.svg" alt="...">
-  <img src="images/vlakje_geel.svg" alt="...">
-  <img src="images/vlakje_geel.svg" alt="...">
-  <img src="images/vlakje_geel.svg" alt="...">
-  <img src="images/vlakje_blauw.svg" alt="...">
-  <img src="images/vlakje_blauw.svg" alt="...">
-  <img src="images/vlakje_blauw.svg" alt="...">
-  <img src="images/vlakje_blauw.svg" alt="...">
-</div>
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="images/half_rood_links.svg" alt="...">
+        <img src="images/vlakje_rood.svg" alt="...">
+        <img src="images/vlakje_rood.svg" alt="...">
+        <img src="images/half_rood_rechts.svg" alt="...">
+        <img src="images/half_rood_links.svg" alt="...">
+        <img src="images/vlakje_rood.svg" alt="...">
+        <img src="images/vlakje_rood.svg" alt="...">
+        <img src="images/half_rood_rechts.svg" alt="...">
+        <img src="images/half_groen_links.svg" alt="...">
+        <img src="images/vlakje_groen.svg" alt="...">
+        <img src="images/vlakje_groen.svg" alt="...">
+        <img src="images/half_groen_rechts.svg" alt="...">
+        <img src="images/half_geel_links.svg" alt="...">
+        <img src="images/vlakje_geel.svg" alt="...">
+        <img src="images/vlakje_geel.svg" alt="...">
+        <img src="images/half_geel_rechts.svg" alt="...">
+        <img src="images/half_blauw_links.svg" alt="...">
+        <img src="images/vlakje_blauw.svg" alt="...">
+        <img src="images/vlakje_blauw.svg" alt="...">
+        <img src="images/half_blauw_rechts.svg" alt="...">
+    </div>
 </body>
-
 </html>
