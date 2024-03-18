@@ -72,6 +72,12 @@ https://trello.com/b/qevw1g7e/visit-beemster-kwartet
 | 27   | Jul 8, 2024   | Jul 14, 2024  |Final additions to the website and prepare to launch the website.  |         5            |
 | 28   | Jul 15, 2024  | Jul 21, 2024  |Website is online and working, making sure it works and keeps working correctly.                                                                                                 |         2            |
 
+## Milestones
+
+- Mar 24, 2024: Homepage finished.
+- Apr 7, 2024: Pop-up finished.
+- May 5, 2024: Games and information on pop-up finished.
+- May 26, 2024: Finished project.
 
 ## Wireframe
 
