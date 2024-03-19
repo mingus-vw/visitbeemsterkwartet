@@ -13,44 +13,42 @@
         }
 
         .wrapper {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%; /* Set height to 50% of viewport height */
+            height: 100%; /* Set height to 100% of viewport height */
             display: grid;
-            grid-template-columns: repeat(8, 1fr); /* 8 columns */
-            grid-template-rows: repeat(5, 1fr); /* 5 rows */
-            gap: 5px; /* Adjust the gap between grid cells */
-            justify-content: center;
-            align-content: center;
-        }
-
-        .second-wrapper {
-            position: absolute;
-            top: 10%; /* Position the second grid below the first one */
-            left: 5%;
-            width: 100%;
-            height: 100%; /* Set height to 50% of viewport height */
-            display: grid;
-            grid-template-columns: repeat(7, 1fr); /* 4 columns */
-            grid-template-rows: repeat(4, 1fr); /* 2 rows */
-            gap: 5px; /* Adjust the gap between grid cells */
+            grid-template-columns: repeat(8, 10vw); /* 8 columns with 10% viewport width each */
+            grid-template-rows: repeat(5, 10vw); /* 5 rows with 10% viewport width each */
+            gap: 1vw; /* Adjust the gap between grid cells */
             justify-content: center;
             align-content: center;
         }
 
         .blocks {
-            width: 100%; /* Ensure each square takes up the entire grid cell */
-            height: 100%; /* Ensure each square takes up the entire grid cell */
-            object-fit: cover; /* Ensure the image covers the entire block */
+            width: 100%; /* Ensure each block takes up the entire grid cell width */
+            height: 100%; /* Ensure each block takes up the entire grid cell height */
             position: relative;
-            z-index: 1; /* Ensure the SVGs are above the background */
+            perspective: 100vw; /* Perspective for 3D effect */
             transition: transform 0.2s; /* Add transition effect */
         }
 
+        .blocks img {
+            width: 100%; /* Ensure the image covers the entire block */
+            height: auto;
+            display: block;
+        }
+
         .blocks:hover {
-            transform: scale(1.1); /* Scale up on hover */
+            transform: rotateX(20deg); /* Rotate on hover */
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                grid-template-columns: repeat(4, 20vw); /* 4 columns with 20% viewport width each */
+                grid-template-rows: repeat(10, 20vw); /* 10 rows with 20% viewport width each */
+            }
         }
     </style>
 </head>
@@ -67,37 +65,13 @@
             $color = $colors[$color_index];
 
             if ($count_per_color[$color] < 8) {
-                echo "<img class='blocks' src='images/vlakje_$color.svg' alt='$color'>";
+                echo "<div class='blocks'><img src='images/vlakje_$color.svg' alt='$color'></div>";
                 $count_per_color[$color]++;
             }
 
             // Add rhombuses in the white spaces between rows
             if (($i + 1) % 8 != 0 && $count_per_color[$color] < 8) {
-                echo "<img class='blocks' src='images/vlakje_$color.svg' alt='$color'>";
-                $count_per_color[$color]++;
-            }
-        }
-    ?>
-</div>
-
-<div class="second-wrapper">
-    <?php
-        // Assuming you have SVG paths for red, green, yellow, and blue blocks
-        $colors = array("rood", "groen", "geel", "blauw");
-        $count_per_color = array("rood" => 0, "groen" => 0, "geel" => 0, "blauw" => 0);
-
-        for ($i = 0; $i < 8; $i++) {
-            $color_index = floor($i / 4) % 5;
-            $color = $colors[$color_index];
-
-            if ($count_per_color[$color] < 5) {
-                echo "<img class='blocks' src='images/vlakje_$color.svg' alt='$color'>";
-                $count_per_color[$color]++;
-            }
-
-            // Add rhombuses in the white spaces between rows
-            if (($i + 1) % 5 != 0 && $count_per_color[$color] < 5) {
-                echo "<img class='blocks' src='images/vlakje_$color.svg' alt='$color'>";
+                echo "<div class='blocks'><img src='images/vlakje_$color.svg' alt='$color'></div>";
                 $count_per_color[$color]++;
             }
         }
