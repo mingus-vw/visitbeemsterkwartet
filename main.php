@@ -32,7 +32,7 @@
     margin: auto;
     max-width: auto;
     display: grid;
-    grid-template-columns: repeat(11, 1fr); /* Increase the number of columns */
+    grid-template-columns: repeat(10, 1fr); /* Increase the number of columns */
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 15px;
     justify-content: center;
