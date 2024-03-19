@@ -94,11 +94,61 @@
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
-  <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
+ <a data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="blocks" src="images/vlakje_blauw.svg" alt="..."> </a>
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="images/varken.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Varken</h5>
+    <button class="btn btn-primary" type="button" onclick="toggleCollapse()">
+        Lees meer
+    </button>
+    <div class="collapse" id="collapseExample">
+        <div class="card-text">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+    </div>
+</div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
+<script>
+    function toggleCollapse() {
+        var collapseElement = document.getElementById('collapseExample');
+        var isCollapsed = collapseElement.classList.contains('show');
+        
+        if (isCollapsed) {
+            collapseElement.classList.remove('show');
+        } else {
+            collapseElement.classList.add('show');
+        }
+    }
+</script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
