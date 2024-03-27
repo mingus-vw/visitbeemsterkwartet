@@ -69,33 +69,33 @@
     transition: all 0.25s;
 }
 
+.card .content {
+  display: none; /* Initially hide the content */
+}
+
+.card.expanded .content {
+  display: block; /* Display content when card is expanded */
+}
+
+/* Additional styling for card appearance */
 .card {
-  transition: all 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.expanded {
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(1.2);
-  z-index: 1;
+.card h2 {
+  margin-top: 0;
 }
 
-.col-sm-6 {
-  transition: all 0.3s ease-in-out;
-}
-
-.expanded .col-sm-6:not(:last-child) {
-  transform: translateX(-50%);
-}
-
-.expanded .col-sm-6:last-child {
-  display: none;
+.card button {
+  cursor: pointer;
 }
 
     </style>
 
 <div class="wrapper">
-  <img  class="ja" src="images/kip.png" alt="...">
+  <img  class="ja" src="images/kip.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">
@@ -140,10 +140,10 @@
               <img class="card-img-top" src="images/varken.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Varken</h5>
-                <button class="btn btn-primary" type="button" onclick="expandCard('cardVarken')">
+                <button class="btn btn-primary toggle-btn" type="button">
                   Lees meer
                 </button>
-                <div class="card-text">
+                <div class="card-text content">
                   Varken placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -154,10 +154,10 @@
               <img class="card-img-top" src="images/koe.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Koe</h5>
-                <button class="btn btn-primary" type="button" onclick="expandCard('cardKoe')">
+                <button class="btn btn-primary toggle-btn" type="button">
                   Lees meer
                 </button>
-                <div class="card-text">
+                <div class="card-text content ">
                   Koe placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -171,10 +171,10 @@
               <img class="card-img-top" src="images/schaap.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Schaap</h5>
-                <button class="btn btn-primary" type="button" onclick="expandCard('cardSchaap')">
+                <button class="btn btn-primary toggle-btn" type="button">
                   Lees meer
                 </button>
-                <div class="card-text">
+                <div class="card-text content">
                   Schaap placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -185,10 +185,10 @@
               <img class="card-img-top" src="images/kip.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Kip</h5>
-                <button class="btn btn-primary" type="button" onclick="expandCard('cardKip')">
+                <button class="btn btn-primary toggle-btn" type="button">
                   Lees meer
                 </button>
-                <div class="card-text">
+                <div class="card-text content">
                   Kip placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -201,70 +201,40 @@
 </div>
 
 
-<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Show a second modal and hide this one with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Hide this modal and show the first with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-      </div>
-    </div>
-  </div>
-</div>
-<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
 
 
 
 
 
 <script>
-  function toggleCollapse(collapseId) {
-    var collapseElement = document.getElementById(collapseId);
-    var isCollapsed = collapseElement.classList.contains('show');
-    
-    if (isCollapsed) {
-      collapseElement.classList.remove('show');
-    } else {
-      collapseElement.classList.add('show');
-    }
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
 
-  function expandCard(cardId) {
-    var card = document.getElementById(cardId);
-    card.classList.toggle('expanded');
+  toggleButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.card');
+      const otherCards = document.querySelectorAll('.card:not(.expanded)');
 
-    // Collapse other cards
-    var allCards = document.querySelectorAll('.card');
-    allCards.forEach(function(item) {
-      if (item.id !== cardId) {
-        item.classList.remove('expanded');
+      // Toggle expanded class for the clicked card
+      card.classList.toggle('expanded');
+
+      // Adjust styles for other cards
+      otherCards.forEach(function(otherCard) {
+        otherCard.classList.toggle('pushed');
+      });
+
+      // Update button text based on card state
+      if (card.classList.contains('expanded')) {
+        this.textContent = 'Lees minder';
+      } else {
+        this.textContent = 'Lees meer';
       }
     });
-  }
-
+  });
+});
 </script>
+
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
