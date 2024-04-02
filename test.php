@@ -115,7 +115,6 @@
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
- <a data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="blocks" src="images/vlakje_blauw.svg" alt="..."> </a>
 </div>
 
 
