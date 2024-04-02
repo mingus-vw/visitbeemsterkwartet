@@ -71,14 +71,13 @@
 }
 
 .card .content {
-  display: none; /* Initially hide the content */
+  display: none; 
 }
 
 .card.expanded .content {
-  display: block; /* Display content when card is expanded */
+  display: block;
 }
 
-/* Additional styling for card appearance */
 .card {
   border: 1px solid #ccc;
   padding: 10px;
@@ -201,6 +200,25 @@
   </div>
 </div>
 
+<div class="modal" tabindex="-1" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Informatie
+    </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -216,15 +234,12 @@ document.addEventListener("DOMContentLoaded", function() {
       const card = this.closest('.card');
       const otherCards = document.querySelectorAll('.card:not(.expanded)');
 
-      // Toggle expanded class for the clicked card
       card.classList.toggle('expanded');
 
-      // Adjust styles for other cards
       otherCards.forEach(function(otherCard) {
         otherCard.classList.toggle('pushed');
       });
 
-      // Update button text based on card state
       if (card.classList.contains('expanded')) {
         this.textContent = 'Lees minder';
       } else {
