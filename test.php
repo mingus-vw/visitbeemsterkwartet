@@ -32,7 +32,7 @@
     margin: auto;
     max-width: auto;
     display: grid;
-    grid-template-columns: repeat(11, 1fr); /* Increase the number of columns */
+    grid-template-columns: repeat(11, 1fr); 
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 15px;
     justify-content: center;
@@ -49,6 +49,7 @@
     transform: scale(1);
     transition: all 0.25s;
 }
+
 
     .wrapper img:nth-child(7n+1) {
         grid-column: 2/span 2;
@@ -95,7 +96,7 @@
     </style>
 
 <div class="wrapper">
-  <img  class="ja" src="images/kip.png" alt="...">
+<a data-bs-toggle="modal" data-bs-target="#exampleModal"><img  class="blocks" src="images/kip.png" alt="..."></a>
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">
   <img class="blocks" src="images/vlakje_rood.svg" alt="...">

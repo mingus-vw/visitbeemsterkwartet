@@ -32,7 +32,7 @@
     margin: auto;
     max-width: auto;
     display: grid;
-    grid-template-columns: repeat(11, 1fr); /* Increase the number of columns */
+    grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 15px;
     justify-content: center;
@@ -112,9 +112,6 @@
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
 </div>
-
-
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
