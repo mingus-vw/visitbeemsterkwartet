@@ -108,7 +108,6 @@
     <img class="blocks" src="images/vlakje_geel.svg" alt="...">
     <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
     <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
-    <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
   </div>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
