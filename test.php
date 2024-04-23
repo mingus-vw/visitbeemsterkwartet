@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +88,7 @@
 
 <body>
 
-<div class="wrapper">
+  <div class="wrapper">
     <img class="ja" src="images/kip.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
     <img class="blocks" src="images/vlakje_rood.svg" alt="...">
     <img class="blocks" src="images/vlakje_rood.svg" alt="...">
