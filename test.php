@@ -10,28 +10,51 @@
   <style>
     /* Styling for the Rhombuses and the modal with the cards. */
     body {
-      font-family: arial;
-      font-size: 16px;
-      display: flex;
+            font-family: arial;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
 
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      max-width: 100%;
-    }
+        .wrapper {
+            position: relative;
+            flex-grow: 1;
+            margin: auto;
+            max-width: none;
+            display: inline-grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 2fr);
+            grid-gap: 15px;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            /* Ensure the wrapper spans the entire viewport width */
+            height: 100vh;
+            /* Ensure the wrapper spans the entire viewport height */
+        }
 
-    .wrapper {
-      position: relative;
-      flex-grow: 1;
-      margin: auto;
-      max-width: auto;
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      grid-template-rows: repeat(10, 1fr);
-      grid-gap: 15px;
-      justify-content: center;
-      align-items: center;
-    }
+        .wrapper img {
+            z-index: 1;
+            grid-column: span 2 / auto;
+            max-width: 100%;
+            margin-bottom: -52%;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            transform: scale(1);
+            transition: all 0.25s;
+        }
+
+        .wrapper img:nth-child(11n+1) {
+            grid-column: 2 / span 2;
+        }
+
+        .wrapper img:hover {
+            z-index: 2;
+            transform: scale(1.1);
+        }
 
     /* This is for the positions of the rhombuses */
     .blocks {
@@ -42,16 +65,6 @@
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       transform: scale(1);
       transition: all 0.25s;
-    }
-
-
-    .wrapper img:nth-child(7n+1) {
-      grid-column: 2/span 2;
-    }
-
-    .wrapper img:hover {
-      z-index: 2;
-      transform: scale(1.1);
     }
 
     .ja {
@@ -91,34 +104,59 @@
 <body>
 
   <!-- The rhombuses -->
-  <div class="wrapper">
-    <img class="ja" src="images/kip.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
-    <img class="blocks" src="images/vlakje_rood.svg" alt="...">
-    <img class="blocks" src="images/vlakje_rood.svg" alt="...">
-    <img class="blocks" src="images/vlakje_rood.svg" alt="...">
-    <img class="blocks" src="images/vlakje_rood.svg" alt="...">
-    <img class="blocks" src="images/vlakje_rood.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_groen.svg" alt="...">
-    <img class="blocks" src="images/vlakje_geel.svg" alt="...">
-    <img class="blocks" src="images/vlakje_geel.svg" alt="...">
-    <img class="blocks" src="images/vlakje_geel.svg" alt="...">
-    <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
-    <img class="blocks" src="images/vlakje_blauw.svg" alt="...">
-  </div>
+    <div class="wrapper">
+      <img class="ja" src="images/kaas.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_rood.svg" alt="rood">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+    </div>
 
   <!-- Pop up modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Streekproducten</h1>
           <!-- Buttons to switch from information to game view -->
           <button class="btn btn-primary" type="button" id="informatieButton">
             Informatie
@@ -133,28 +171,28 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardVarken">
-                <img class="card-img-top" src="images/varken.png" alt="Card image cap">
+                <img class="card-img-top" src="images/aardappelen.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Varken</h5>
+                  <h5 class="card-title">Aardappelen</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Varken placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    Aardappelen placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKoe">
-                <img class="card-img-top" src="images/koe.png" alt="Card image cap">
+                <img class="card-img-top" src="images/kaas.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Koe</h5>
+                  <h5 class="card-title">Kaas</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
-                    Koe placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    Kaas placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
               </div>
@@ -164,28 +202,28 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
-                <img class="card-img-top" src="images/schaap.png" alt="Card image cap">
+                <img class="card-img-top" src="images/fruit.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Schaap</h5>
+                  <h5 class="card-title">Fruit</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Schaap placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    Fruit placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKip">
-                <img class="card-img-top" src="images/kip.png" alt="Card image cap">
+                <img class="card-img-top" src="images/knoflook.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Kip</h5>
+                  <h5 class="card-title">Knoflook</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Kip placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    Knoflook placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
               </div>
@@ -200,6 +238,8 @@
     </div>
   </div>
   </div>
+
+  
 <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>

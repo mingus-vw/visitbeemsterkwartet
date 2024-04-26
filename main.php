@@ -14,9 +14,7 @@
             justify-content: center;
             min-height: 100vh;
             overflow: hidden;
-            /* Remove scrollbar */
             margin: 0;
-            /* Remove default margin */
         }
 
         .wrapper {
