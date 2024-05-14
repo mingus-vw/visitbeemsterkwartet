@@ -67,15 +67,7 @@
       transition: all 0.25s;
     }
 
-    .ja {
-      z-index: 1;
-      grid-column: span 2;
-      max-width: 100%;
-      margin-bottom: -52%;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
+    
 
     .card .content {
       display: none;
@@ -105,7 +97,7 @@
 
   <!-- The rhombuses -->
     <div class="wrapper">
-      <img class="ja" src="images/kaas.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
+      <img src="images/kaas.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
         <img src="images/vlakje_rood.svg" alt="rood">
         <img src="images/vlakje_rood.svg" alt="rood">
         <img src="images/vlakje_rood.svg" alt="rood">
@@ -185,7 +177,7 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKoe">
-                <img class="card-img-top" src="images/kaas.png" alt="Card image cap">
+                <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kaas</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
@@ -202,7 +194,7 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
-                <img class="card-img-top" src="images/fruit.png" alt="Card image cap">
+                <img class="card-img-top" src="images/fruit.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Fruit</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
@@ -216,7 +208,7 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKip">
-                <img class="card-img-top" src="images/knoflook.png" alt="Card image cap">
+                <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Knoflook</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
@@ -232,7 +224,7 @@
         </div>
         <!-- Game part of the modal -->
         <div class="question" style="display: none;">
-          <h1>test</h1>
+          <h1>Hier komt het spel</h1>
         </div>
       </div>
     </div>
