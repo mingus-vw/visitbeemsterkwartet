@@ -228,7 +228,11 @@
         </div>
         <!-- Game part of the modal -->
         <div class="question" style="display: none;">
+
+
           <h1>Hier komt het spel</h1>
+
+          
         </div>
       </div>
     </div>
