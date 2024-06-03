@@ -27,14 +27,11 @@
       display: inline-grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(auto-fill, 150px);
-      /* Adjusted this line */
       grid-gap: 15px;
       justify-content: center;
       align-items: center;
       width: 100vw;
-      /* Ensure the wrapper spans the entire viewport width */
       min-height: 100vh;
-      /* Adjusted this line */
     }
 
     .wrapper img {
@@ -67,28 +64,90 @@
       transition: all 0.25s;
     }
 
+    /* Modal styling */
+    .modal .modal-dialog {
+      max-width: 900px;
+    }
 
+    .modal .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 1rem 1.5rem;
+    }
 
-    .card .content {
+    .modal .modal-header h1 {
+      margin: 0;
+    }
+
+    .modal .modal-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .modal .card {
+      flex: 1 1 calc(50% - 15px);
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .modal .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .modal .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .modal .card-body {
+      padding: 15px;
+    }
+
+    .modal .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .modal .card-text {
       display: none;
     }
 
-    .card.expanded .content {
+    .modal .card.expanded .card-text {
       display: block;
     }
 
-    .card {
-      border: 1px solid #ccc;
-      padding: 10px;
+    .modal .btn {
       margin-bottom: 10px;
+      font-size: 0.9rem;
     }
 
-    .card h2 {
-      margin-top: 0;
+    .modal .question {
+      display: none;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid #dee2e6;
     }
 
-    .card button {
-      cursor: pointer;
+    /* Card content toggling */
+    .card .toggle-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card.expanded .toggle-btn {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+
+    .card .toggle-btn:focus {
+      box-shadow: none;
     }
   </style>
 </head>
@@ -414,74 +473,74 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Function to handle information and game button clicks for a specific modal
-    function setupModal(modalId, informatieButtonId, spelButtonId) {
-      const modal = document.getElementById(modalId);
-      const informatieButton = modal.querySelector(`#${informatieButtonId}`);
-      const spelButton = modal.querySelector(`#${spelButtonId}`);
-      const cards = modal.querySelectorAll('.card');
-      const question = modal.querySelector('.question');
+    document.addEventListener("DOMContentLoaded", function() {
+      // Function to handle information and game button clicks for a specific modal
+      function setupModal(modalId, informatieButtonId, spelButtonId) {
+        const modal = document.getElementById(modalId);
+        const informatieButton = modal.querySelector(`#${informatieButtonId}`);
+        const spelButton = modal.querySelector(`#${spelButtonId}`);
+        const cards = modal.querySelectorAll('.card');
+        const question = modal.querySelector('.question');
 
-      informatieButton.addEventListener('click', function() {
-        showCards(cards);
-        hideQuestion(question);
-      });
-
-      spelButton.addEventListener('click', function() {
-        hideCards(cards);
-        showQuestion(question);
-      });
-
-      function showCards(cards) {
-        cards.forEach(function(card) {
-          card.style.display = 'block';
-        });
-      }
-
-      function hideCards(cards) {
-        cards.forEach(function(card) {
-          card.style.display = 'none';
-        });
-      }
-
-      function showQuestion(question) {
-        question.style.display = 'block';
-      }
-
-      function hideQuestion(question) {
-        question.style.display = 'none';
-      }
-    }
-
-    // Initialize all modals with their respective buttons
-    setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
-    setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
-    setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
-
-    // Toggle card content visibility
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-    toggleButtons.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const card = this.closest('.card');
-        const otherCards = document.querySelectorAll('.card:not(.expanded)');
-
-        card.classList.toggle('expanded');
-
-        otherCards.forEach(function(otherCard) {
-          otherCard.classList.toggle('pushed');
+        informatieButton.addEventListener('click', function() {
+          showCards(cards);
+          hideQuestion(question);
         });
 
-        if (card.classList.contains('expanded')) {
-          this.textContent = 'Lees minder';
-        } else {
-          this.textContent = 'Lees meer';
+        spelButton.addEventListener('click', function() {
+          hideCards(cards);
+          showQuestion(question);
+        });
+
+        function showCards(cards) {
+          cards.forEach(function(card) {
+            card.style.display = 'block';
+          });
         }
+
+        function hideCards(cards) {
+          cards.forEach(function(card) {
+            card.style.display = 'none';
+          });
+        }
+
+        function showQuestion(question) {
+          question.style.display = 'block';
+        }
+
+        function hideQuestion(question) {
+          question.style.display = 'none';
+        }
+      }
+
+      // Initialize all modals with their respective buttons
+      setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
+      setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
+      setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
+
+      // Toggle card content visibility
+      const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+      toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const card = this.closest('.card');
+          const otherCards = document.querySelectorAll('.card:not(.expanded)');
+
+          card.classList.toggle('expanded');
+
+          otherCards.forEach(function(otherCard) {
+            otherCard.classList.toggle('pushed');
+          });
+
+          if (card.classList.contains('expanded')) {
+            this.textContent = 'Lees minder';
+          } else {
+            this.textContent = 'Lees meer';
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
