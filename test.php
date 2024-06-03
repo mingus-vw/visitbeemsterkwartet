@@ -13,7 +13,8 @@
 
   <!-- The rhombuses -->
   <div class="wrapper">
-    <img src="images/kaas.jpg" data-bs-toggle="modal" data-bs-target="#streekproducten" alt="...">
+    <img src="images/kaas.jpg" data-bs-toggle="modal" data-bs-target="#streekproducten" alt="Streekproducten">
+    <img src="images/logo.svg">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
@@ -71,6 +72,9 @@
             </button>
             <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
               Spelletjes
+            </button>
+            <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
             </button>
           </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -165,6 +169,9 @@
           <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
             Spelletjes
           </button>
+          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
+            </button>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -254,6 +261,9 @@
           <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
             Spelletjes
           </button>
+          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
+            </button>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>

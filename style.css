@@ -31,7 +31,6 @@ body {
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: scale(1);
-    transition: all 0.25s;
 }
 
 .wrapper img:nth-child(11n+1) {
@@ -157,19 +156,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .btn-close {
+.btn-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    margin: 10px; /* Voeg wat ruimte toe vanaf de randen */
-  }
-  
-  
-  
-  
+    top: 25px;
+    right: 25px;
+}
 
-
-
-  
