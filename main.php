@@ -13,7 +13,6 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            overflow: hidden;
             margin: 0;
         }
 
@@ -76,6 +75,12 @@
         <img src="images/vlakje_groen.svg" alt="groen">
         <img src="images/vlakje_groen.svg" alt="groen">
         <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
+        <img src="images/vlakje_groen.svg" alt="groen">
         <img src="images/vlakje_geel.svg" alt="geel">
         <img src="images/vlakje_geel.svg" alt="geel">
         <img src="images/vlakje_geel.svg" alt="geel">
@@ -87,6 +92,11 @@
         <img src="images/vlakje_geel.svg" alt="geel">
         <img src="images/vlakje_geel.svg" alt="geel">
         <img src="images/vlakje_geel.svg" alt="geel">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
+        <img src="images/vlakje_blauw.svg" alt="blauw">
         <img src="images/vlakje_blauw.svg" alt="blauw">
         <img src="images/vlakje_blauw.svg" alt="blauw">
         <img src="images/vlakje_blauw.svg" alt="blauw">

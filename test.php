@@ -16,7 +16,6 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      overflow: hidden;
       margin: 0;
     }
 
@@ -27,14 +26,15 @@
       max-width: none;
       display: inline-grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(6, 2fr);
+      grid-template-rows: repeat(auto-fill, 150px);
+      /* Adjusted this line */
       grid-gap: 15px;
       justify-content: center;
       align-items: center;
       width: 100vw;
       /* Ensure the wrapper spans the entire viewport width */
-      height: 100vh;
-      /* Ensure the wrapper spans the entire viewport height */
+      min-height: 100vh;
+      /* Adjusted this line */
     }
 
     .wrapper img {
@@ -228,15 +228,10 @@
         </div>
         <!-- Game part of the modal -->
         <div class="question" style="display: none;">
-
-
           <h1>Hier komt het spel</h1>
-
-          
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <!-- Pop up modal Wereld Erfgoed -->
@@ -325,16 +320,15 @@
       </div>
     </div>
   </div>
-  </div>
 
   <!-- Pop up modal Bijzondere gebouwen -->
   <div class="modal fade" id="bijzondere_gebouwen" tabindex="-1" aria-labelledby="bijzondere_gebouwenLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="bijzonder_gebouwenLabel">Bijzondere gebouwen</h1>
+          <h1 class="modal-title fs-5" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
           <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="spelButton_bijzondere_gebouwen">
+          <button class="btn btn-primary" type="button" id="informatieButton_bijzondere_gebouwen">
             Informatie
           </button>
           <button class="btn btn-primary" type="button" id="spelButton_bijzondere_gebouwen">
@@ -346,29 +340,29 @@
           <!-- This is where the cards are put in -->
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKosterij">
-                <img class="card-img-top" src="images/kosterij.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardKerk">
+                <img class="card-img-top" src="images/polderhuis.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Kosterij</h5>
+                  <h5 class="card-title">Kerk</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Kosterij tekst
+                    Polderhuis tekst
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKlooster">
-                <img class="card-img-top" src="images/klooster.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardMolen">
+                <img class="card-img-top" src="images/molen.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Klooster O.L.V Lourdes</h5>
+                  <h5 class="card-title">Molen</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
-                    Klooster O.L.V Lourdes tekst
+                    Molen tekst
                   </div>
                 </div>
               </div>
@@ -377,29 +371,29 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardMolen">
-                <img class="card-img-top" src="images/molen.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardBoerderij">
+                <img class="card-img-top" src="images/klooster.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Molen de Nachtegaal</h5>
+                  <h5 class="card-title">Boerderij</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Molen de Nachtegaal teskt
+                    Klooster
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardPolderhuis">
-                <img class="card-img-top" src="images/polderhuis.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardHuis">
+                <img class="card-img-top" src="images/kosterij.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Polderhuis</h5>
+                  <h5 class="card-title">Kosterij</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Polderhuis tekst
+                    Huis tekst
                   </div>
                 </div>
               </div>
@@ -413,73 +407,82 @@
       </div>
     </div>
   </div>
-  </div>
+
 
 
   <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const informatieButton = document.getElementById('informatieButton_streekproducten');
-      const spelButton = document.getElementById('spelButton_streekproducten');
-      const cards = document.querySelectorAll('.card');
-      const question = document.querySelector('.question');
+  document.addEventListener("DOMContentLoaded", function() {
+    // Function to handle information and game button clicks for a specific modal
+    function setupModal(modalId, informatieButtonId, spelButtonId) {
+      const modal = document.getElementById(modalId);
+      const informatieButton = modal.querySelector(`#${informatieButtonId}`);
+      const spelButton = modal.querySelector(`#${spelButtonId}`);
+      const cards = modal.querySelectorAll('.card');
+      const question = modal.querySelector('.question');
 
       informatieButton.addEventListener('click', function() {
-        showCards();
-        hideQuestion();
+        showCards(cards);
+        hideQuestion(question);
       });
 
       spelButton.addEventListener('click', function() {
-        hideCards();
-        showQuestion();
+        hideCards(cards);
+        showQuestion(question);
       });
 
-      function showCards() {
+      function showCards(cards) {
         cards.forEach(function(card) {
           card.style.display = 'block';
         });
       }
 
-      function hideCards() {
+      function hideCards(cards) {
         cards.forEach(function(card) {
           card.style.display = 'none';
         });
       }
 
-      function showQuestion() {
+      function showQuestion(question) {
         question.style.display = 'block';
       }
 
-      function hideQuestion() {
+      function hideQuestion(question) {
         question.style.display = 'none';
       }
-    });
+    }
 
-    document.addEventListener("DOMContentLoaded", function() {
-      const toggleButtons = document.querySelectorAll('.toggle-btn');
+    // Initialize all modals with their respective buttons
+    setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
+    setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
+    setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
 
-      toggleButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          const card = this.closest('.card');
-          const otherCards = document.querySelectorAll('.card:not(.expanded)');
+    // Toggle card content visibility
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
 
-          card.classList.toggle('expanded');
+    toggleButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const card = this.closest('.card');
+        const otherCards = document.querySelectorAll('.card:not(.expanded)');
 
-          otherCards.forEach(function(otherCard) {
-            otherCard.classList.toggle('pushed');
-          });
+        card.classList.toggle('expanded');
 
-          if (card.classList.contains('expanded')) {
-            this.textContent = 'Lees minder';
-          } else {
-            this.textContent = 'Lees meer';
-          }
+        otherCards.forEach(function(otherCard) {
+          otherCard.classList.toggle('pushed');
         });
+
+        if (card.classList.contains('expanded')) {
+          this.textContent = 'Lees minder';
+        } else {
+          this.textContent = 'Lees meer';
+        }
       });
     });
-  </script>
+  });
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
