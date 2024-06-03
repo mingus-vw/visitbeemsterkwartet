@@ -5,160 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style link="stylesheet" href="style.css"></style>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    /* Styling for the Rhombuses and the modal with the cards. */
-    body {
-      font-family: arial;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-
-    .wrapper {
-      position: relative;
-      flex-grow: 1;
-      margin: auto;
-      max-width: none;
-      display: inline-grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(auto-fill, 150px);
-      grid-gap: 15px;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      min-height: 100vh;
-    }
-
-    .wrapper img {
-      z-index: 1;
-      grid-column: span 2 / auto;
-      max-width: 100%;
-      margin-bottom: -52%;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
-
-    .wrapper img:nth-child(11n+1) {
-      grid-column: 2 / span 2;
-    }
-
-    .wrapper img:hover {
-      z-index: 2;
-      transform: scale(1.1);
-    }
-
-    /* This is for the positions of the rhombuses */
-    .blocks {
-      z-index: 1;
-      grid-column: span 2;
-      max-width: 100%;
-      margin-bottom: -52%;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
-
-    /* Modal styling */
-    .modal .modal-dialog {
-      max-width: 900px;
-    }
-
-    .modal .modal-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #f8f9fa;
-      border-bottom: 1px solid #dee2e6;
-      padding: 1rem 1.5rem;
-    }
-
-    .modal .modal-header h1 {
-      margin: 0;
-    }
-
-    .modal .modal-body {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .modal .card {
-      flex: 1 1 calc(50% - 15px);
-      border: 1px solid #dee2e6;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .modal .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .modal .card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .modal .card-body {
-      padding: 15px;
-    }
-
-    .modal .card-title {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .modal .card-text {
-      display: none;
-    }
-
-    .modal .card.expanded .card-text {
-      display: block;
-    }
-
-    .modal .btn {
-      margin-bottom: 10px;
-      font-size: 0.9rem;
-    }
-
-    .modal-title {
-      font-weight: bold;
-    }
-
-    .card-title {
-      font-weight: bold;
-    }
-
-
-    .modal .question {
-      display: none;
-      padding: 1rem 1.5rem;
-      border-top: 1px solid #dee2e6;
-    }
-
-    /* Card content toggling */
-    .card .toggle-btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-
-    .card.expanded .toggle-btn {
-      background-color: #6c757d;
-      border-color: #6c757d;
-    }
-
-    .card .toggle-btn:focus {
-      box-shadow: none;
-    }
-  </style>
 </head>
 
 <body>
@@ -216,15 +64,16 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="streekproductenLabel">Streekproducten</h1>
-          <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_streekproducten">
-            Informatie
-          </button>
-          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
-            Spel
-          </button>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_streekproducten">
+              Informatie
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
+              Spelletjes
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -307,14 +156,16 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
+          <h1 class="modal-title" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
+          <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_wereld_erfgoed">
+          <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
             Informatie
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_wereld_erfgoed">
-            Spel
+          <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
+            Spelletjes
           </button>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -394,14 +245,16 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
+          <h1 class="modal-title" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
+          <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_bijzondere_gebouwen">
+          <button class="btn btn-success" type="button" id="informatieButton_bijzondere_gebouwen">
             Informatie
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_bijzondere_gebouwen">
-            Spel
+          <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
+            Spelletjes
           </button>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
