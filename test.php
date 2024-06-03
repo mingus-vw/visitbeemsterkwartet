@@ -128,6 +128,15 @@
       font-size: 0.9rem;
     }
 
+    .modal-title {
+      font-weight: bold;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+
     .modal .question {
       display: none;
       padding: 1rem 1.5rem;
