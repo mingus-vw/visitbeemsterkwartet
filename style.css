@@ -1,0 +1,166 @@
+/* Styling for the Rhombuses and the modal with the cards. */
+body {
+    font-family: arial;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: none;
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.wrapper img {
+    z-index: 1;
+    grid-column: span 2 / auto;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+}
+
+.wrapper img:nth-child(11n+1) {
+    grid-column: 2 / span 2;
+}
+
+.wrapper img:hover {
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+/* This is for the positions of the rhombuses */
+.blocks {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+}
+
+/* Modal styling */
+.modal .modal-dialog {
+    max-width: 900px;
+}
+
+.modal .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+.modal .modal-header h1 {
+    margin: 0;
+}
+
+.modal .modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.modal .card {
+    flex: 1 1 calc(50% - 15px);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.modal .card:hover {
+    transform: translateY(-5px);
+}
+
+.modal .card img {
+    width: 100%;
+    height: auto;
+}
+
+.modal .card-body {
+    padding: 15px;
+}
+
+.modal .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal .card-text {
+    display: none;
+}
+
+.modal .card.expanded .card-text {
+    display: block;
+}
+
+.modal .btn {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+
+.modal .question {
+    display: none;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Card content toggling */
+.card .toggle-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.card.expanded .toggle-btn {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.card .toggle-btn:focus {
+    box-shadow: none;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
