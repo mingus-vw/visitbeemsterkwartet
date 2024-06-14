@@ -16,7 +16,6 @@ body {
     max-width: none;
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(auto-fill, 150px);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
@@ -33,6 +32,7 @@ body {
     transform: scale(1);
 }
 
+
 .wrapper img:nth-child(11n+1) {
     grid-column: 2 / span 2;
 }
@@ -42,16 +42,6 @@ body {
     transform: scale(1.1);
 }
 
-/* This is for the positions of the rhombuses */
-.blocks {
-    z-index: 1;
-    grid-column: span 2;
-    max-width: 100%;
-    margin-bottom: -52%;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1);
-    transition: all 0.25s;
-}
 
 /* Modal styling */
 .modal .modal-dialog {
@@ -136,6 +126,12 @@ body {
     text-align: center; /* Center de tekst horizontaal */
 }
 
+.modal .leren {
+    display: none;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #dee2e6;
+    text-align: center; /* Center de tekst horizontaal */
+}
 
 /* Card content toggling */
 .card .toggle-btn {

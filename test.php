@@ -10,10 +10,9 @@
 </head>
 
 <body>
-
   <!-- The rhombuses -->
   <div class="wrapper">
-    <img src="images/vlakje_rood.svg" alt="logo">
+    <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
@@ -31,24 +30,29 @@
     <img src="images/vlakje_groen.svg">
     <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/boerderijen.svg">
-    <img src="images/dorpen.svg" data-bs-toggle="modal" data-bs-target="#streekproducten">
+    <img src="images/dorpen.svg">
     <img src="images/dieren.svg">
-    <img src="images/gebouwen.svg">
+    <img src="images/gebouwen.svg" data-bs-toggle="modal" data-bs-target="#bijzondere_gebouwen">
     <img src="images/vlakje_groen.svg">
     <img src="images/kerken.svg">
-    <img src="images/streekproducten.svg">
+    <img src="images/streekproducten.svg" data-bs-toggle="modal" data-bs-target="#streekproducten">
     <img src="images/tuinen.svg">
     <img src="images/waterbeheer.svg">
     <img src="images/wegen_dijken_bruggen.svg">
     <img src="images/vlakje_geel.svg">
-    <img src="images/werelderfgoed.svg">
+    <img src="images/werelderfgoed.svg" data-bs-toggle="modal" data-bs-target="#wereld_erfgoed">
     <img src="images/hollandse_waterlinies.svg">
     <img src="images/historische_figuren.svg">
     <img src="images/beemsterkleuren.svg">
     <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_geel.svg" alt="geel">
+    <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-    <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/visit_beemster.svg">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -72,7 +76,7 @@
             <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
               Spelletjes
             </button>
-            <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+            <button class="btn btn-primary" type="button" id="leerButton_streekproducten">
               Leren
             </button>
           </div>
@@ -150,6 +154,9 @@
         <div class="question" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -168,7 +175,7 @@
           <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
             Spelletjes
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+          <button class="btn btn-primary" type="button" id="leerButton_wereld_erfgoed">
               Leren
             </button>
           </div>
@@ -242,6 +249,9 @@
         <div class="question" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
+        <div class="leren" style="display: none;">
+          <h1>Leer informatie</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -260,7 +270,7 @@
           <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
             Spelletjes
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+          <button class="btn btn-primary" type="button" id="leerButton_bijzondere_gebouwen">
               Leren
             </button>
           </div>
@@ -334,6 +344,9 @@
         <div class="question" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
+        <div class="leren" style="display: none;">
+          <h1>Leer tekst van de modal</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -341,26 +354,34 @@
 
 
   <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Function to handle information and game button clicks for a specific modal
-      function setupModal(modalId, informatieButtonId, spelButtonId) {
+      function setupModal(modalId, informatieButtonId, spelButtonId, leerButtonId) {
         const modal = document.getElementById(modalId);
         const informatieButton = modal.querySelector(`#${informatieButtonId}`);
         const spelButton = modal.querySelector(`#${spelButtonId}`);
+        const leerButton = modal.querySelector(`#${leerButtonId}`);
         const cards = modal.querySelectorAll('.card');
         const question = modal.querySelector('.question');
+        const leren = modal.querySelector('.leren');
 
         informatieButton.addEventListener('click', function() {
           showCards(cards);
           hideQuestion(question);
+          hideLeren(leren);
         });
 
         spelButton.addEventListener('click', function() {
           hideCards(cards);
           showQuestion(question);
+          hideLeren(leren);
+        });
+
+        leerButton.addEventListener('click', function() {
+          hideCards(cards);
+          hideQuestion(question);
+          showLeren(leren);
         });
 
         function showCards(cards) {
@@ -382,14 +403,20 @@
         function hideQuestion(question) {
           question.style.display = 'none';
         }
+
+        function showLeren(leren) {
+          leren.style.display = 'block';
+        }
+
+        function hideLeren(leren) {
+          leren.style.display = 'none';
+        }
       }
 
-      // Initialize all modals with their respective buttons
-      setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
-      setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
-      setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
+      setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten', 'leerButton_streekproducten');
+      setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed', 'leerButton_wereld_erfgoed');
+      setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen', 'leerButton_bijzondere_gebouwen');
 
-      // Toggle card content visibility
       const toggleButtons = document.querySelectorAll('.toggle-btn');
 
       toggleButtons.forEach(function(btn) {
