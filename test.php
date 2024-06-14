@@ -5,99 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style link="stylesheet" href="style.css"></style>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    /* Styling for the Rhombuses and the modal with the cards. */
-    body {
-      font-family: arial;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-
-    .wrapper {
-      position: relative;
-      flex-grow: 1;
-      margin: auto;
-      max-width: none;
-      display: inline-grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(auto-fill, 150px);
-      /* Adjusted this line */
-      grid-gap: 15px;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      /* Ensure the wrapper spans the entire viewport width */
-      min-height: 100vh;
-      /* Adjusted this line */
-    }
-
-    .wrapper img {
-      z-index: 1;
-      grid-column: span 2 / auto;
-      max-width: 100%;
-      margin-bottom: -52%;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
-
-    .wrapper img:nth-child(11n+1) {
-      grid-column: 2 / span 2;
-    }
-
-    .wrapper img:hover {
-      z-index: 2;
-      transform: scale(1.1);
-    }
-
-    /* This is for the positions of the rhombuses */
-    .blocks {
-      z-index: 1;
-      grid-column: span 2;
-      max-width: 100%;
-      margin-bottom: -52%;
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
-
-
-
-    .card .content {
-      display: none;
-    }
-
-    .card.expanded .content {
-      display: block;
-    }
-
-    .card {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card h2 {
-      margin-top: 0;
-    }
-
-    .card button {
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body>
 
   <!-- The rhombuses -->
   <div class="wrapper">
-    <img src="images/kaas.jpg" data-bs-toggle="modal" data-bs-target="#streekproducten" alt="...">
+    <img src="images/kaas.jpg" data-bs-toggle="modal" data-bs-target="#streekproducten" alt="Streekproducten">
+    <img src="images/logo.svg">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
@@ -148,15 +65,19 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="streekproductenLabel">Streekproducten</h1>
-          <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_streekproducten">
-            Informatie
-          </button>
-          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
-            Spel
-          </button>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_streekproducten">
+              Informatie
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
+              Spelletjes
+            </button>
+            <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -239,14 +160,19 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
+          <h1 class="modal-title" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
+          <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_wereld_erfgoed">
+          <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
             Informatie
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_wereld_erfgoed">
-            Spel
+          <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
+            Spelletjes
           </button>
+          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
+            </button>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -326,14 +252,19 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
+          <h1 class="modal-title" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
+          <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-primary" type="button" id="informatieButton_bijzondere_gebouwen">
+          <button class="btn btn-success" type="button" id="informatieButton_bijzondere_gebouwen">
             Informatie
           </button>
-          <button class="btn btn-primary" type="button" id="spelButton_bijzondere_gebouwen">
-            Spel
+          <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
+            Spelletjes
           </button>
+          <button class="btn btn-primary" type="button" id="spelButton_streekproducten">
+              Leren
+            </button>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -414,74 +345,74 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Function to handle information and game button clicks for a specific modal
-    function setupModal(modalId, informatieButtonId, spelButtonId) {
-      const modal = document.getElementById(modalId);
-      const informatieButton = modal.querySelector(`#${informatieButtonId}`);
-      const spelButton = modal.querySelector(`#${spelButtonId}`);
-      const cards = modal.querySelectorAll('.card');
-      const question = modal.querySelector('.question');
+    document.addEventListener("DOMContentLoaded", function() {
+      // Function to handle information and game button clicks for a specific modal
+      function setupModal(modalId, informatieButtonId, spelButtonId) {
+        const modal = document.getElementById(modalId);
+        const informatieButton = modal.querySelector(`#${informatieButtonId}`);
+        const spelButton = modal.querySelector(`#${spelButtonId}`);
+        const cards = modal.querySelectorAll('.card');
+        const question = modal.querySelector('.question');
 
-      informatieButton.addEventListener('click', function() {
-        showCards(cards);
-        hideQuestion(question);
-      });
-
-      spelButton.addEventListener('click', function() {
-        hideCards(cards);
-        showQuestion(question);
-      });
-
-      function showCards(cards) {
-        cards.forEach(function(card) {
-          card.style.display = 'block';
-        });
-      }
-
-      function hideCards(cards) {
-        cards.forEach(function(card) {
-          card.style.display = 'none';
-        });
-      }
-
-      function showQuestion(question) {
-        question.style.display = 'block';
-      }
-
-      function hideQuestion(question) {
-        question.style.display = 'none';
-      }
-    }
-
-    // Initialize all modals with their respective buttons
-    setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
-    setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
-    setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
-
-    // Toggle card content visibility
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-    toggleButtons.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const card = this.closest('.card');
-        const otherCards = document.querySelectorAll('.card:not(.expanded)');
-
-        card.classList.toggle('expanded');
-
-        otherCards.forEach(function(otherCard) {
-          otherCard.classList.toggle('pushed');
+        informatieButton.addEventListener('click', function() {
+          showCards(cards);
+          hideQuestion(question);
         });
 
-        if (card.classList.contains('expanded')) {
-          this.textContent = 'Lees minder';
-        } else {
-          this.textContent = 'Lees meer';
+        spelButton.addEventListener('click', function() {
+          hideCards(cards);
+          showQuestion(question);
+        });
+
+        function showCards(cards) {
+          cards.forEach(function(card) {
+            card.style.display = 'block';
+          });
         }
+
+        function hideCards(cards) {
+          cards.forEach(function(card) {
+            card.style.display = 'none';
+          });
+        }
+
+        function showQuestion(question) {
+          question.style.display = 'block';
+        }
+
+        function hideQuestion(question) {
+          question.style.display = 'none';
+        }
+      }
+
+      // Initialize all modals with their respective buttons
+      setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten');
+      setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed');
+      setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen');
+
+      // Toggle card content visibility
+      const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+      toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const card = this.closest('.card');
+          const otherCards = document.querySelectorAll('.card:not(.expanded)');
+
+          card.classList.toggle('expanded');
+
+          otherCards.forEach(function(otherCard) {
+            otherCard.classList.toggle('pushed');
+          });
+
+          if (card.classList.contains('expanded')) {
+            this.textContent = 'Lees minder';
+          } else {
+            this.textContent = 'Lees meer';
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
