@@ -14,7 +14,11 @@ Be able to:
 - View the website correctly on mobile, tablet and computer.
 - View the website in different languages.
 - Easily add new features to the website.
-- The look and feel of the website according to the designer.
+- The look and feel of the website according to the designer, Arjen Ijff.
+- The website will be able to be used by people of all ages, with a focus on children.
+- The website will display information about the Beemster, including the history, the sights and the activities that can be done in the Beemster.
+- Media will be provided by the team.
+- The website will need to be easily maintainable and updatable so that new developers can easily take over the project.
 
 
 
