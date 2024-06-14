@@ -75,10 +75,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .modal .card {
     flex: 1 1 calc(50% - 15px);
+    max-width: 300px;
+    /* Voeg een max-width toe om de breedte van de kaarten te beperken */
     border: 1px solid #dee2e6;
     border-radius: 8px;
     overflow: hidden;
@@ -130,7 +133,9 @@ body {
     display: none;
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
+    text-align: center; /* Center de tekst horizontaal */
 }
+
 
 /* Card content toggling */
 .card .toggle-btn {
