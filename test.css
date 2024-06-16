@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-image {
+    background-image: url('images/Homepage_desktop.png'); /* Zorg ervoor dat het pad correct is */
+    background-size: cover; /* Zorgt ervoor dat de afbeelding de hele breedte en hoogte bedekt */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw; /* Zet de breedte op 100% van de viewport breedte */
+    height: 100vh; /* Zet de hoogte op 100% van de viewport hoogte */
+  }
+  
