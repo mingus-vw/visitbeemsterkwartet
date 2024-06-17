@@ -11,9 +11,6 @@ body {
 
 .wrapper {
     position: relative;
-    flex-grow: 1;
-    margin: auto;
-    max-width: none;
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
@@ -24,13 +21,22 @@ body {
 }
 
 .wrapper img {
-    z-index: 1;
     grid-column: span 2 / auto;
     max-width: 100%;
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1);
+    transform: scale(1); 
 }
+
+.ja {
+    grid-column: span 2 / auto;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1); 
+}
+
+
 
 
 .wrapper img:nth-child(11n+1) {
@@ -59,6 +65,13 @@ body {
 
 .modal .modal-header h1 {
     margin: 0;
+}
+
+.modal-foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
 
 .modal .modal-body {
@@ -123,14 +136,16 @@ body {
     display: none;
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
-    text-align: center; /* Center de tekst horizontaal */
+    text-align: center;
+    /* Center de tekst horizontaal */
 }
 
 .modal .leren {
     display: none;
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
-    text-align: center; /* Center de tekst horizontaal */
+    text-align: center;
+    /* Center de tekst horizontaal */
 }
 
 /* Card content toggling */
@@ -164,4 +179,3 @@ body {
     top: 25px;
     right: 25px;
 }
-

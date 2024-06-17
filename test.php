@@ -24,22 +24,22 @@
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_rood.svg" alt="rood">
     <img src="images/vlakje_groen.svg" alt="groen">
-    <img src="images/vlakje_groen.svg"  alt="groen">
+    <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/icon.svg">
     <img src="images/vlakje_groen.svg" alt="groen">
-    <img src="images/vlakje_groen.svg">
+    <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/boerderijen.svg">
     <img src="images/dorpen.svg">
     <img src="images/dieren.svg">
     <img src="images/gebouwen.svg" data-bs-toggle="modal" data-bs-target="#bijzondere_gebouwen">
-    <img src="images/vlakje_groen.svg">
+    <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/kerken.svg">
     <img src="images/streekproducten.svg" data-bs-toggle="modal" data-bs-target="#streekproducten">
     <img src="images/tuinen.svg">
     <img src="images/waterbeheer.svg">
     <img src="images/wegen_dijken_bruggen.svg">
-    <img src="images/vlakje_geel.svg">
+    <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/werelderfgoed.svg" data-bs-toggle="modal" data-bs-target="#wereld_erfgoed">
     <img src="images/hollandse_waterlinies.svg">
     <img src="images/historische_figuren.svg">
@@ -53,7 +53,9 @@
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-    <img src="images/visit_beemster.svg">
+    <a class="ja" href="https://www.visitbeemster.nl" target="_blank">
+      <img src="images/visit_beemster.svg" alt="Visit Beemster">
+    </a>
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -265,13 +267,13 @@
           <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
           <button class="btn btn-success" type="button" id="informatieButton_bijzondere_gebouwen">
-            Informatie
+            INFO
           </button>
           <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
-            Spelletjes
+            SPEL
           </button>
           <button class="btn btn-primary" type="button" id="leerButton_bijzondere_gebouwen">
-              Leren
+              LEER
             </button>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
