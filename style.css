@@ -16,7 +16,6 @@ body {
     max-width: none;
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(auto-fill, 150px);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
