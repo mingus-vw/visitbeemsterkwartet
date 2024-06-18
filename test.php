@@ -202,7 +202,7 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardDroogmakerij">
-                <img class="card-img-top" src="images/droogmakerij.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/beemster.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Droogmakerij de Beemster</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
@@ -233,7 +233,7 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardWerelderfgoed">
-                <img class="card-img-top" src="images/werelderfgoedschaal.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/werelderfgoed_schaal.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Unesco erfgoed logo</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
