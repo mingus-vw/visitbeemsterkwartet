@@ -1,25 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
 }
 
 .background-image {
   position: fixed; /* Zorgt ervoor dat de achtergrond vast blijft staan */
   top: 0;
   left: 0;
+
   width: 100vw;
   height: 100vh;
   background-image: url('images/Homepage_desktop.png'); /* Zorg ervoor dat het pad correct is */
-  background-size: cover; /* Zorgt ervoor dat de afbeelding de hele breedte en hoogte bedekt */
+
   background-repeat: no-repeat;
-  background-position: center;
+
   z-index: 0; /* Zet de achtergrond naar de achterkant */
 }
 
 .wrapper {
-  position: relative; /* Zet de positie van de wrapper relatief t.o.v. de achtergrond */
-  z-index: 1; /* Zorgt ervoor dat de wrapper boven de achtergrond wordt geplaatst */
+  position: relative;
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 15px;
@@ -27,6 +27,7 @@ body {
   align-items: center;
   width: 100vw;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .wrapper img {
@@ -34,8 +35,7 @@ body {
   max-width: 100%;
   margin-bottom: -52%;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  transform: scale(1);
-  z-index: 1; 
+  transform: scale(1); 
 }
 
 .wrapper img:nth-child(11n+1) {

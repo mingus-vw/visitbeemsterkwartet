@@ -53,9 +53,9 @@
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-    <a class="ja" href="https://www.visitbeemster.nl" target="_blank">
+    <!-- <a class="ja" href="https://www.visitbeemster.nl" target="_blank"> -->
       <img src="images/visit_beemster.svg" alt="Visit Beemster">
-    </a>
+    <!-- </a> -->
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -73,13 +73,13 @@
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_streekproducten">
-              Informatie
+              INFO
             </button>
             <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
-              Spelletjes
+              SPEL
             </button>
             <button class="btn btn-primary" type="button" id="leerButton_streekproducten">
-              Leren
+              LEER
             </button>
           </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -172,13 +172,13 @@
           <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
           <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
-            Informatie
+            INFO
           </button>
           <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
-            Spelletjes
+            SPEL
           </button>
           <button class="btn btn-primary" type="button" id="leerButton_wereld_erfgoed">
-              Leren
+              LEER
             </button>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

@@ -28,17 +28,6 @@ body {
     transform: scale(1); 
 }
 
-.ja {
-    grid-column: span 2 / auto;
-    max-width: 100%;
-    margin-bottom: -52%;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1); 
-}
-
-
-
-
 .wrapper img:nth-child(11n+1) {
     grid-column: 2 / span 2;
 }
@@ -48,6 +37,13 @@ body {
     transform: scale(1.1);
 }
 
+.ja {
+    grid-column: span 2 / auto;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1); 
+}
 
 /* Modal styling */
 .modal .modal-dialog {
