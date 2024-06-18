@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -42,7 +42,7 @@
     <img src="images/vlakje_geel.svg">
     <img src="images/werelderfgoed.svg" data-bs-toggle="modal" data-bs-target="#wereld_erfgoed">
     <img src="images/hollandse_waterlinies.svg">
-    <img src="images/historische_figuren.svg">
+    <img src="images/historische_figuren.svg" data-bs-toggle="modal" data-bs-target="#histfiguren">
     <img src="images/beemsterkleuren.svg">
     <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/vlakje_geel.svg" alt="geel">
@@ -351,7 +351,103 @@
     </div>
   </div>
 
+  <!-- Pop up modal hist figuren -->
+  <div class="modal fade" id="histfiguren" tabindex="-1" aria-labelledby="histfigurenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="histfigurenLabel">Historische Figuren</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_histfiguren">
+              Informatie
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_histfiguren">
+              Spelletjes
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_histfiguren">
+              Leren
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- This is where the cards are put in -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardbwolff">
+                <img class="card-img-top" src="images/hist. figuren b. wolff.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">betje</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Verschillende soorten aardappel worden al ruim 400 jaar geteeld. Uniek is het soort BeemsterValery, een
+                    puur aardappeltje alleen gepoot en geoogst in de Beemster.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKoe">
+                <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Kaas</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    Beemsterkaas van de Cono kaasmakerij is &quot;wereldberoemd&quot; en gemaakt van uitsluitend melk van koeien
+                    die in de Beemster grazen. De kaas wordt niet alleen in Nederland verkocht maar ook wereldwijd
+                    geëxporteerd. Ook is er echte boerenkaas van kaasboerderij Groot.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardSchaap">
+                <img class="card-img-top" src="images/fruit.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Fruit</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Diverse rassen appels, peren en kersen worden met name in de Zuidoostbeemster geteeld.
+                    Voorjaar siert de vele bloesems dit gebied.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKip">
+                <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Knoflook</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Pure, authentieke en unieke knoflook wordt verbouwd op de Beemsterklei.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game part of the modal -->
+        <div class="question" style="display: none;">
+          <h1>Hier komt het spel</h1>
+        </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

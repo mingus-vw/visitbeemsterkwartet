@@ -15,7 +15,7 @@ body {
     margin: auto;
     max-width: none;
     display: inline-grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
@@ -26,12 +26,11 @@ body {
 .wrapper img {
     z-index: 1;
     grid-column: span 2 / auto;
-    max-width: 100%;
-    margin-bottom: -52%;
+    width: 50%; /* Adjusted to make the images smaller */
+    margin-bottom: -26%; /* Adjusted proportionally to the width change */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: scale(1);
 }
-
 
 .wrapper img:nth-child(11n+1) {
     grid-column: 2 / span 2;
@@ -41,6 +40,7 @@ body {
     z-index: 2;
     transform: scale(1.1);
 }
+
 
 
 /* Modal styling */
