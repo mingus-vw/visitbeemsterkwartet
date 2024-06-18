@@ -42,7 +42,7 @@
     <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/werelderfgoed.svg" data-bs-toggle="modal" data-bs-target="#wereld_erfgoed">
     <img src="images/hollandse_waterlinies.svg">
-    <img src="images/historische_figuren.svg">
+    <img src="images/historische_figuren.svg" data-bs-toggle="modal" data-bs-target="#histfiguren">
     <img src="images/beemsterkleuren.svg">
     <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/vlakje_geel.svg" alt="geel">
@@ -353,6 +353,100 @@
     </div>
   </div>
 
+  <!-- Pop up modal hist figuren -->
+  <div class="modal fade" id="histfiguren" tabindex="-1" aria-labelledby="histfigurenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="histfigurenLabel">Historische Figuren</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_histfiguren">
+              Informatie
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_histfiguren">
+              Spelletjes
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_histfiguren">
+              Leren
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- This is where the cards are put in -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardbwolff">
+                <img class="card-img-top" src="images/man.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">betje</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKoe">
+                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Kaas</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardSchaap">
+                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Fruit</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKip">
+                <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Knoflook</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game part of the modal -->
+        <div class="question" style="display: none;">
+          <h1>Hier komt het spel</h1>
+        </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
@@ -418,6 +512,7 @@
       setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten', 'leerButton_streekproducten');
       setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed', 'leerButton_wereld_erfgoed');
       setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen', 'leerButton_bijzondere_gebouwen');
+      setupModal('histfiguren', 'informatieButton_histfiguren', 'spelButton_histfiguren', 'leerButton_histfiguren');
 
       const toggleButtons = document.querySelectorAll('.toggle-btn');
 
