@@ -25,7 +25,7 @@ body {
     max-width: 100%;
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1); 
+    transform: scale(1);
 }
 
 .wrapper img:nth-child(11n+1) {
@@ -42,25 +42,41 @@ body {
     max-width: 100%;
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1); 
+    transform: scale(1);
 }
 
 /* Modal styling */
-.modal .modal-dialog {
-    max-width: 900px;
-}
 
 .modal .modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f9fa;
     border-bottom: 1px solid #dee2e6;
     padding: 1rem 1.5rem;
+    position: relative;
 }
 
 .modal .modal-header h1 {
-    margin: 0;
+    text-align: center;
+    /* Centreer de titel */
+}
+
+.modal-logo {
+    max-height: 100px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+
+.modal .modal-dialog {
+    max-width: 900px;
 }
 
 .modal-foto {
@@ -80,7 +96,6 @@ body {
 .modal .card {
     flex: 1 1 calc(50% - 15px);
     max-width: 300px;
-    /* Voeg een max-width toe om de breedte van de kaarten te beperken */
     border: 1px solid #dee2e6;
     border-radius: 8px;
     overflow: hidden;
@@ -170,8 +185,4 @@ body {
     align-items: center;
 }
 
-.btn-close {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-}
+

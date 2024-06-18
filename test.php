@@ -70,6 +70,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
+        <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_streekproducten">
@@ -92,7 +93,7 @@
                 <img class="card-img-top" src="images/aardappelen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Aardappelen</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-danger toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -107,7 +108,7 @@
                 <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kaas</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
@@ -126,7 +127,7 @@
                 <img class="card-img-top" src="images/fruit.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Fruit</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -168,6 +169,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
+        <img src="images/werelderfgoed.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
           <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
@@ -191,7 +193,7 @@
                 <img class="card-img-top" src="images/waterlinie.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Waterlinie</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-danger toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -205,7 +207,7 @@
                 <img class="card-img-top" src="images/beemster.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Droogmakerij de Beemster</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
@@ -222,7 +224,7 @@
                 <img class="card-img-top" src="images/stelling.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Stelling van Amsterdam</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -263,6 +265,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
+        <img src="images/gebouwen.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
           <div class="modal-buttons">
           <!-- Buttons to switch from information to game view -->
@@ -286,7 +289,7 @@
                 <img class="card-img-top" src="images/polderhuis.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kerk</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-danger toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -300,7 +303,7 @@
                 <img class="card-img-top" src="images/molen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Molen</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
@@ -317,7 +320,7 @@
                 <img class="card-img-top" src="images/klooster.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Boerderij</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -358,16 +361,17 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
+        <img src="images/historische_figuren.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="histfigurenLabel">Historische Figuren</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_histfiguren">
-              Informatie
+              INFO
             </button>
             <button class="btn btn-danger" type="button" id="spelButton_histfiguren">
-              Spelletjes
+              SPEL
             </button>
             <button class="btn btn-primary" type="button" id="leerButton_histfiguren">
-              Leren
+              LEER
             </button>
           </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -377,10 +381,10 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardbwolff">
-                <img class="card-img-top" src="images/man.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/hist_figuren_wolff.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">betje</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <h5 class="card-title">Betje Wolff</h5>
+                  <button class="btn btn-danger toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -391,10 +395,10 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKoe">
-                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/hist_figuren_fabritius.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Kaas</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <h5 class="card-title">Fabritius</h5>
+                  <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
@@ -408,10 +412,10 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
-                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/hist_figuren_leeghwater.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Fruit</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
+                  <h5 class="card-title">Leeghwater</h5>
+                  <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -422,9 +426,9 @@
             </div>
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKip">
-                <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/hist_figuren_sluis.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Knoflook</h5>
+                  <h5 class="card-title">Sluis</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
