@@ -29,15 +29,15 @@
     <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/vlakje_groen.svg" alt="groen">
     <img src="images/vlakje_groen.svg" alt="groen">
-    <img src="images/boerderijen.svg">
+    <img src="images/boerderijen.svg" data-bs-toggle="modal" data-bs-target="#boerderijen">
     <img src="images/dorpen.svg">
     <img src="images/dieren.svg">
     <img src="images/gebouwen.svg" data-bs-toggle="modal" data-bs-target="#bijzondere_gebouwen">
     <img src="images/vlakje_groen.svg" alt="groen">
-    <img src="images/kerken.svg">
+    <img src="images/kerken.svg" data-bs-toggle="modal" data-bs-target="#kerken">
     <img src="images/streekproducten.svg" data-bs-toggle="modal" data-bs-target="#streekproducten">
     <img src="images/tuinen.svg">
-    <img src="images/waterbeheer.svg">
+    <img src="images/waterbeheer.svg" data-bs-toggle="modal" data-bs-target="#waterbeheer">
     <img src="images/wegen_dijken_bruggen.svg">
     <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/werelderfgoed.svg" data-bs-toggle="modal" data-bs-target="#wereld_erfgoed">
@@ -53,9 +53,7 @@
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-    <!-- <a class="ja" href="https://www.visitbeemster.nl" target="_blank"> -->
       <img src="images/visit_beemster.svg" alt="Visit Beemster">
-    <!-- </a> -->
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -120,7 +118,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
@@ -189,46 +186,45 @@
           <!-- This is where the cards are put in -->
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardWaterlinie">
-                <img class="card-img-top" src="images/waterlinie.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardDirck">
+                <img class="card-img-top" src="images/dirck.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Waterlinie</h5>
+                  <h5 class="card-title">Dirck van Os</h5>
                   <button class="btn btn-danger toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Waterlinie tekst
+                    Dirck tekst
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardDroogmakerij">
+              <div class="card" style="width: 16rem;" id="cardBeemster kavels">
                 <img class="card-img-top" src="images/beemster.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Droogmakerij de Beemster</h5>
+                  <h5 class="card-title">Beemster kavels</h5>
                   <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content ">
-                    Droogmakerij de Beemster tekst
+                    Beemster kavels tekst
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardStelling">
-                <img class="card-img-top" src="images/stelling.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardKoper">
+                <img class="card-img-top" src="images/koper.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Stelling van Amsterdam</h5>
+                  <h5 class="card-title">Kopergravure</h5>
                   <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Stelling van Amsterdam tekst
+                    Kopergravure tekst
                   </div>
                 </div>
               </div>
@@ -285,11 +281,41 @@
           <!-- This is where the cards are put in -->
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKerk">
+              <div class="card" style="width: 16rem;" id="cardLinden">
+                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Onder de Linden</h5>
+                  <button class="btn btn-danger toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Onder de Linden tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardWesterhem">
+                <img class="card-img-top" src="images/westerhem.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Westerhem</h5>
+                  <button class="btn btn-success toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    Westerhem tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardPolderhuis">
                 <img class="card-img-top" src="images/polderhuis.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Kerk</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
+                  <h5 class="card-title">Polderhuis</h5>
+                  <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
@@ -299,46 +325,15 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardMolen">
-                <img class="card-img-top" src="images/molen.jpg" alt="Card image cap">
+              <div class="card" style="width: 16rem;" id="cardNachtegaal">
+                <img class="card-img-top" src="images/nachtegaal.jpeg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Molen</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
-                  <div class="card-text content ">
-                    Molen tekst
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardBoerderij">
-                <img class="card-img-top" src="images/klooster.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Boerderij</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
-                  <div class="card-text content">
-                    Klooster
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardHuis">
-                <img class="card-img-top" src="images/kosterij.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Kosterij</h5>
+                  <h5 class="card-title">Nachtegaal</h5>
                   <button class="btn btn-primary toggle-btn" type="button">
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    Huis tekst
+                    Nachtegaal tekst
                   </div>
                 </div>
               </div>
@@ -388,7 +383,6 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
                   </div>
                 </div>
               </div>
@@ -408,7 +402,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
@@ -419,7 +412,6 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
                   </div>
                 </div>
               </div>
@@ -433,7 +425,285 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game part of the modal -->
+        <div class="question" style="display: none;">
+          <h1>Hier komt het spel</h1>
+        </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="waterbeheer" tabindex="-1" aria-labelledby="waterbeheerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        <img src="images/waterbeheer.svg" alt="Logo" class="modal-logo">
+          <h1 class="modal-title" id="waterbeheerLabel">Waterbeheer</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_waterbeheer">
+              INFO
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_waterbeheer">
+              SPEL
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_waterbeheer">
+              LEER
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- This is where the cards are put in -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardJacobus">
+                <img class="card-img-top" src="images/gemaal_jacobus_bouman.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Jacobus bouman gemaal</h5>
+                  <button class="btn btn-danger toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Jacobus tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardWouter">
+                <img class="card-img-top" src="images/gemaal_wouter_sluis.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Wouter Sluis gemaal</h5>
+                  <button class="btn btn-success toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    Wouter tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardMaquette">
+                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Molens op Maquette</h5>
+                  <button class="btn btn-warning toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Maquette tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardRingvaart">
+                <img class="card-img-top" src="images/beemsterringvaart.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Beemsterringvaart</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Ringvaart tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game part of the modal -->
+        <div class="question" style="display: none;">
+          <h1>Hier komt het spel</h1>
+        </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="kerken" tabindex="-1" aria-labelledby="kerkenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        <img src="images/kerken.svg" alt="Logo" class="modal-logo">
+          <h1 class="modal-title" id="kerkenLabel">Kerken</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_kerken">
+              INFO
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_kerken">
+              SPEL
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_kerken">
+              LEER
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- This is where the cards are put in -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKeyserkerk">
+                <img class="card-img-top" src="images/keyserkerk.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Keyserkerk</h5>
+                  <button class="btn btn-danger toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Keyserkerk tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardDoper">
+                <img class="card-img-top" src="images/doper.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Joannes de Doper, WB</h5>
+                  <button class="btn btn-success toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    Doper tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardKapel">
+                <img class="card-img-top" src="images/kapel.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">NH Kapel</h5>
+                  <button class="btn btn-warning toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Kapel tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardSchuilkerk">
+                <img class="card-img-top" src="images/schuilkerk.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Schuilkerk</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Schuilkerk tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game part of the modal -->
+        <div class="question" style="display: none;">
+          <h1>Hier komt het spel</h1>
+        </div>
+        <div class="leren" style="display: none;">
+          <h1>Hier komen de teksten voor docenten</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="boerderijen" tabindex="-1" aria-labelledby="boerderijenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        <img src="images/boerderijen.svg" alt="Logo" class="modal-logo">
+          <h1 class="modal-title" id="boerderijenLabel">Boerderijen</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-success" type="button" id="informatieButton_boerderijen">
+              INFO
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_boerderijen">
+              SPEL
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_boerderijen">
+              LEER
+            </button>
+          </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- This is where the cards are put in -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardEenhoorn">
+                <img class="card-img-top" src="images/eenhoorn.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Boerderij Eenhoorn</h5>
+                  <button class="btn btn-danger toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Eenhoorn tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardLepelaar">
+                <img class="card-img-top" src="images/lepelaar.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Boerderij Lepelaar</h5>
+                  <button class="btn btn-success toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content ">
+                    Lepelaar tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardBroedersbouw">
+                <img class="card-img-top" src="images/broedersbouw.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Boerderij Broedersbouw</h5>
+                  <button class="btn btn-warning toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Broedersbouw tekst
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 16rem;" id="cardBoschrijk">
+                <img class="card-img-top" src="images/boschrijk.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Booerderij Boschrijk</h5>
+                  <button class="btn btn-primary toggle-btn" type="button">
+                    Lees meer
+                  </button>
+                  <div class="card-text content">
+                    Boschrijk tekst
                   </div>
                 </div>
               </div>
