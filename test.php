@@ -53,9 +53,7 @@
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-    <!-- <a class="ja" href="https://www.visitbeemster.nl" target="_blank"> -->
       <img src="images/visit_beemster.svg" alt="Visit Beemster">
-    <!-- </a> -->
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -120,7 +118,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
@@ -217,13 +214,12 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardStelling">
-                <img class="card-img-top" src="images/stelling.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/IMG_0956.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Stelling van Amsterdam</h5>
+                  <h5 class="card-title">Koper</h5>
                   <button class="btn btn-warning toggle-btn" type="button">
                     Lees meer
                   </button>
@@ -313,7 +309,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardBoerderij">
@@ -388,7 +383,6 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
                   </div>
                 </div>
               </div>
@@ -408,7 +402,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardSchaap">
@@ -419,7 +412,6 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
                   </div>
                 </div>
               </div>
@@ -433,7 +425,6 @@
                     Lees meer
                   </button>
                   <div class="card-text content">
-                    
                   </div>
                 </div>
               </div>
