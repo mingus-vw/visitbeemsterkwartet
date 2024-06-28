@@ -71,13 +71,13 @@
         <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
           <div class="modal-buttons">
-            <button class="btn btn-success" type="button" id="informatieButton_streekproducten">
+            <button class="btn  " type="button" id="informatieButton_streekproducten">
               INFO
             </button>
-            <button class="btn btn-danger" type="button" id="spelButton_streekproducten">
+            <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">
               SPEL
             </button>
-            <button class="btn btn-primary" type="button" id="leerButton_streekproducten">
+            <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">
               LEER
             </button>
           </div>
@@ -496,7 +496,7 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardMaquette">
-                <img class="card-img-top" src="images/.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/molengangen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Molens op Maquette</h5>
                   <button class="btn btn-warning toggle-btn" type="button">
