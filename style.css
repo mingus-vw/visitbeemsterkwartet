@@ -53,6 +53,7 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #dee2e6;
     padding: 1rem 1.5rem;
+    background-color: #99cc33;
     position: relative;
 }
 
@@ -64,7 +65,7 @@ body {
 .modal-logo {
     max-height: 100px;
     position: absolute;
-    top: 25px;
+    top: 93px;
     left: 25px;
 }
 
@@ -72,6 +73,7 @@ body {
     position: absolute;
     top: 25px;
     right: 25px;
+    border: black;
 }
 
 
