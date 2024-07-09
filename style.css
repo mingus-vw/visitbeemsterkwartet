@@ -84,6 +84,12 @@ body {
     background-color: #009999;
 }
 
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .modal .modal-header h1 {
     text-align: center;
     /* Centreer de titel */
@@ -172,7 +178,6 @@ body {
     font-weight: bold;
 }
 
-
 .modal .question {
     display: none;
     padding: 1rem 1.5rem;
@@ -209,8 +214,3 @@ body {
     margin: 5px;
 }
 
-.modal-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
