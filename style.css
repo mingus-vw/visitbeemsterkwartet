@@ -60,6 +60,7 @@ body {
 .modal .modal-header h1 {
     text-align: center;
     /* Centreer de titel */
+    color: white;
 }
 
 .modal-logo {
