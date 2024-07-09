@@ -71,7 +71,7 @@
         <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
           <div class="modal-buttons">
-            <button class="btn  " type="button" id="informatieButton_streekproducten">
+            <button class="btn btn-secondary" type="button" id="informatieButton_streekproducten">
               INFO
             </button>
             <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">

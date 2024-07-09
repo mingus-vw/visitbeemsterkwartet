@@ -52,6 +52,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #dee2e6;
+    background-color: #99cc33;
     padding: 1rem 1.5rem;
     position: relative;
 }
