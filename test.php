@@ -70,6 +70,11 @@
         <div class="modal-header">
           <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
+          <div class="modal-buttons">
+            <button class="btn btn-secondary" type="button" id="informatieButton_streekproducten">INFO</button>
+            <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">SPEL</button>
+            <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">LEER</button>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -89,6 +94,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-sm-6">
               <div class="card" style="width: 16rem;" id="cardKaas">
                 <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
