@@ -170,6 +170,34 @@ body {
     font-size: 0.9rem;
 }
 
+#streekproducten .card-body {
+    background-color: #99cc33;
+}
+
+#wereld_erfgoed .card-body {
+    background-color: #339933;
+}
+
+#bijzondere_gebouwen .card-body {
+    background-color: #cc9900;
+}
+
+#histfiguren .card-body {
+    background-color: #ff99cc;
+}
+
+#waterbeheer .card-body {
+    background-color: #00aacc;
+}
+
+#kerken .card-body {
+    background-color: #ffcc00;
+}
+
+#boerderijen .card-body {
+    background-color: #009999;
+}
+
 .modal-title {
     font-weight: bold;
 }
@@ -178,20 +206,27 @@ body {
     font-weight: bold;
 }
 
+.modal .modal-body h5 {
+    color: white;
+    text-align: center;
+}
+
 .modal .question {
-    display: none;
+
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
     /* Center de tekst horizontaal */
+    font-weight: bold;
 }
 
 .modal .leren {
-    display: none;
+
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
     /* Center de tekst horizontaal */
+    font-weight: bold;
 }
 
 /* Card content toggling */
@@ -213,4 +248,3 @@ body {
 .btn {
     margin: 5px;
 }
-

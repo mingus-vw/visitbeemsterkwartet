@@ -91,9 +91,6 @@
                 <img class="card-img-top" src="images/aardappelen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Aardappelen</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Verschillende soorten aardappel worden al ruim 400 jaar geteeld. Uniek is het soort BeemsterValery, een
                     puur aardappeltje alleen gepoot en geoogst in de Beemster.
@@ -109,7 +106,7 @@
                   <button class="btn btn-success toggle-btn" type="button">
                     Lees meer
                   </button>
-                  <div class="card-text content ">
+                  <div class="card-text content">
                     Beemsterkaas van de Cono kaasmakerij is &quot;wereldberoemd&quot; en gemaakt van uitsluitend melk van koeien
                     die in de Beemster grazen. De kaas wordt niet alleen in Nederland verkocht maar ook wereldwijd
                     geëxporteerd. Ook is er echte boerenkaas van kaasboerderij Groot.
@@ -247,10 +244,10 @@
         </div>
         <!-- Game part of the modal -->
         <div class="question" style="display: none;">
-          <h1>Hier komt het spel</h1>
+          <a href="https://www.werelderfgoed.nl/nl/onderwijs/quiz" target="_blank">Unesco Werelderfgoed Quiz</a>
         </div>
         <div class="leren" style="display: none;">
-          <h1>Leer informatie</h1>
+          <a href="https://www.werelderfgoed.nl/nl/onderwijs" target="_blank">Unesco Werelderfgoed</a>
         </div>
       </div>
     </div>
@@ -529,7 +526,7 @@
           <h1>Hier komt het spel</h1>
         </div>
         <div class="leren" style="display: none;">
-          <h1>Hier komen de teksten voor docenten</h1>
+          <a href="https://www.hhnk.nl/leren-over-water" target="_blank">Leren over water</a>
         </div>
       </div>
     </div>
@@ -715,7 +712,7 @@
           <h1>Hier komt het spel</h1>
         </div>
         <div class="leren" style="display: none;">
-          <h1>Hier komen de teksten voor docenten</h1>
+          <a href="https://www.boerderijenstichting.nl/voorlichting/leskist/" target="_blank">Boerderijen educatie</a>
         </div>
       </div>
     </div>
@@ -787,6 +784,9 @@
       setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed', 'leerButton_wereld_erfgoed');
       setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen', 'leerButton_bijzondere_gebouwen');
       setupModal('histfiguren', 'informatieButton_histfiguren', 'spelButton_histfiguren', 'leerButton_histfiguren');
+      setupModal('waterbeheer', 'informatieButton_waterbeheer', 'spelButton_waterbeheer', 'leerButton_waterbeheer');
+      setupModal('kerken', 'informatieButton_kerken', 'spelButton_kerken', 'leerButton_kerken');
+      setupModal('boerderijen', 'informatieButton_boerderijen', 'spelButton_boerderijen', 'leerButton_boerderijen');
 
       const toggleButtons = document.querySelectorAll('.toggle-btn');
 
