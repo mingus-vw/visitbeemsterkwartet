@@ -53,7 +53,7 @@
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/beemster_vanzelfsprekend.svg">
-      <img src="images/visit_beemster.svg" alt="Visit Beemster">
+    <img src="images/visit_beemster.svg" alt="Visit Beemster">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -68,26 +68,17 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
+          <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
-          <div class="modal-buttons">
-            <button class="btn btn-secondary" type="button" id="informatieButton_streekproducten">
-              INFO
-            </button>
-            <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">
-              SPEL
-            </button>
-            <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">
-              LEER
-            </button>
-          </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
           <div class="row">
+            <!-- Voorbeeld voor de kaart met aardappelen -->
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardVarken">
+              <div class="card clickable-card" style="width: 16rem;" id="cardAardappelen">
+                <div class="clickable-overlay"></div>
                 <img class="card-img-top" src="images/aardappelen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Aardappelen</h5>
@@ -99,13 +90,10 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKoe">
+              <div class="card" style="width: 16rem;" id="cardKaas">
                 <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kaas</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Beemsterkaas van de Cono kaasmakerij is &quot;wereldberoemd&quot; en gemaakt van uitsluitend melk van koeien
                     die in de Beemster grazen. De kaas wordt niet alleen in Nederland verkocht maar ook wereldwijd
@@ -117,13 +105,10 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardSchaap">
+              <div class="card" style="width: 16rem;" id="cardFruit">
                 <img class="card-img-top" src="images/fruit.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Fruit</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Diverse rassen appels, peren en kersen worden met name in de Zuidoostbeemster geteeld.
                     Voorjaar siert de vele bloesems dit gebied.
@@ -132,13 +117,10 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKip">
+              <div class="card" style="width: 16rem;" id="cardKnoflook">
                 <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Knoflook</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Pure, authentieke en unieke knoflook wordt verbouwd op de Beemsterklei.
                   </div>
@@ -163,17 +145,17 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/werelderfgoed.svg" alt="Logo" class="modal-logo">
+          <img src="images/werelderfgoed.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
           <div class="modal-buttons">
-          <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
-            INFO
-          </button>
-          <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
-            SPEL
-          </button>
-          <button class="btn btn-primary" type="button" id="leerButton_wereld_erfgoed">
+            <!-- Buttons to switch from information to game view -->
+            <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
+              INFO
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_wereld_erfgoed">
+              SPEL
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_wereld_erfgoed">
               LEER
             </button>
           </div>
@@ -258,17 +240,17 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/gebouwen.svg" alt="Logo" class="modal-logo">
+          <img src="images/gebouwen.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="bijzondere_gebouwenLabel">Bijzondere gebouwen</h1>
           <div class="modal-buttons">
-          <!-- Buttons to switch from information to game view -->
-          <button class="btn btn-success" type="button" id="informatieButton_bijzondere_gebouwen">
-            INFO
-          </button>
-          <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
-            SPEL
-          </button>
-          <button class="btn btn-primary" type="button" id="leerButton_bijzondere_gebouwen">
+            <!-- Buttons to switch from information to game view -->
+            <button class="btn btn-success" type="button" id="informatieButton_bijzondere_gebouwen">
+              INFO
+            </button>
+            <button class="btn btn-danger" type="button" id="spelButton_bijzondere_gebouwen">
+              SPEL
+            </button>
+            <button class="btn btn-primary" type="button" id="leerButton_bijzondere_gebouwen">
               LEER
             </button>
           </div>
@@ -353,7 +335,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/historische_figuren.svg" alt="Logo" class="modal-logo">
+          <img src="images/historische_figuren.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="histfigurenLabel">Historische Figuren</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_histfiguren">
@@ -366,7 +348,7 @@
               LEER
             </button>
           </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -393,7 +375,7 @@
                     Lees meer
                   </button>
                   <div class="card-text content ">
-                    
+
                   </div>
                 </div>
               </div>
@@ -443,7 +425,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/waterbeheer.svg" alt="Logo" class="modal-logo">
+          <img src="images/waterbeheer.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="waterbeheerLabel">Waterbeheer</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_waterbeheer">
@@ -456,7 +438,7 @@
               LEER
             </button>
           </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -536,7 +518,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/kerken.svg" alt="Logo" class="modal-logo">
+          <img src="images/kerken.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="kerkenLabel">Kerken</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_kerken">
@@ -549,7 +531,7 @@
               LEER
             </button>
           </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -629,7 +611,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-        <img src="images/boerderijen.svg" alt="Logo" class="modal-logo">
+          <img src="images/boerderijen.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="boerderijenLabel">Boerderijen</h1>
           <div class="modal-buttons">
             <button class="btn btn-success" type="button" id="informatieButton_boerderijen">
@@ -642,7 +624,7 @@
               LEER
             </button>
           </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- This is where the cards are put in -->
@@ -810,6 +792,8 @@
       });
     });
   </script>
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
