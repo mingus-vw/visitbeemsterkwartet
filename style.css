@@ -52,9 +52,36 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #dee2e6;
-    background-color: #99cc33;
     padding: 1rem 1.5rem;
     position: relative;
+}
+
+#streekproducten .modal-header {
+    background-color: #99cc33;
+}
+
+#wereld_erfgoed .modal-header {
+    background-color: #339933;
+}
+
+#bijzondere_gebouwen .modal-header {
+    background-color: #cc9900;
+}
+
+#histfiguren .modal-header {
+    background-color: #ff99cc;
+}
+
+#waterbeheer .modal-header {
+    background-color: #00aacc;
+}
+
+#kerken .modal-header {
+    background-color: #ffcc00;
+}
+
+#boerderijen .modal-header {
+    background-color: #009999;
 }
 
 .modal .modal-header h1 {
