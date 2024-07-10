@@ -175,9 +175,6 @@
                 <img class="card-img-top" src="images/dirck.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Dirck van Os</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Dirck tekst
                   </div>
@@ -189,9 +186,6 @@
                 <img class="card-img-top" src="images/beemster.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Beemster kavels</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
                     Beemster kavels tekst
                   </div>
@@ -205,9 +199,6 @@
                 <img class="card-img-top" src="images/koper.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kopergravure</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Kopergravure tekst
                   </div>
@@ -219,9 +210,6 @@
                 <img class="card-img-top" src="images/werelderfgoed_schaal.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Unesco erfgoed logo</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Werelferfgoed logo teskt
                   </div>
@@ -270,9 +258,6 @@
                 <img class="card-img-top" src="images/.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Onder de Linden</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Onder de Linden tekst
                   </div>
@@ -284,9 +269,6 @@
                 <img class="card-img-top" src="images/westerhem.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Westerhem</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
                     Westerhem tekst
                   </div>
@@ -300,9 +282,6 @@
                 <img class="card-img-top" src="images/polderhuis.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Polderhuis</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Polderhuis tekst
                   </div>
@@ -314,9 +293,6 @@
                 <img class="card-img-top" src="images/nachtegaal.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Nachtegaal</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Nachtegaal tekst
                   </div>
@@ -364,9 +340,6 @@
                 <img class="card-img-top" src="images/hist_figuren_wolff.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Betje Wolff</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                   </div>
                 </div>
@@ -377,9 +350,6 @@
                 <img class="card-img-top" src="images/hist_figuren_fabritius.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Fabritius</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
 
                   </div>
@@ -393,9 +363,6 @@
                 <img class="card-img-top" src="images/hist_figuren_leeghwater.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Leeghwater</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                   </div>
                 </div>
@@ -406,9 +373,6 @@
                 <img class="card-img-top" src="images/hist_figuren_sluis.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Sluis</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                   </div>
                 </div>
@@ -454,9 +418,6 @@
                 <img class="card-img-top" src="images/gemaal_jacobus_bouman.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Jacobus bouman gemaal</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Jacobus tekst
                   </div>
@@ -468,9 +429,6 @@
                 <img class="card-img-top" src="images/gemaal_wouter_sluis.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Wouter Sluis gemaal</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
                     Wouter tekst
                   </div>
@@ -484,9 +442,6 @@
                 <img class="card-img-top" src="images/molengangen.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Molens op Maquette</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Maquette tekst
                   </div>
@@ -498,9 +453,6 @@
                 <img class="card-img-top" src="images/beemsterringvaart.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Beemsterringvaart</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Ringvaart tekst
                   </div>
@@ -547,9 +499,6 @@
                 <img class="card-img-top" src="images/keyserkerk.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Keyserkerk</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Keyserkerk tekst
                   </div>
@@ -561,9 +510,6 @@
                 <img class="card-img-top" src="images/doper.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Joannes de Doper, WB</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
                     Doper tekst
                   </div>
@@ -577,9 +523,6 @@
                 <img class="card-img-top" src="images/kapel.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">NH Kapel</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Kapel tekst
                   </div>
@@ -591,9 +534,6 @@
                 <img class="card-img-top" src="images/schuilkerk.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Schuilkerk</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Schuilkerk tekst
                   </div>
@@ -640,9 +580,6 @@
                 <img class="card-img-top" src="images/eenhoorn.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Boerderij Eenhoorn</h5>
-                  <button class="btn btn-danger toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Eenhoorn tekst
                   </div>
@@ -654,9 +591,6 @@
                 <img class="card-img-top" src="images/lepelaar.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Boerderij Lepelaar</h5>
-                  <button class="btn btn-success toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content ">
                     Lepelaar tekst
                   </div>
@@ -670,9 +604,6 @@
                 <img class="card-img-top" src="images/broedersbouw.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Boerderij Broedersbouw</h5>
-                  <button class="btn btn-warning toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Broedersbouw tekst
                   </div>
@@ -684,9 +615,6 @@
                 <img class="card-img-top" src="images/boschrijk.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Booerderij Boschrijk</h5>
-                  <button class="btn btn-primary toggle-btn" type="button">
-                    Lees meer
-                  </button>
                   <div class="card-text content">
                     Boschrijk tekst
                   </div>
