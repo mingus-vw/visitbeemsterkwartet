@@ -214,6 +214,10 @@ body {
     text-align: center;
 }
 
+.modal .modal-content h3 {
+    color: rgb(117, 117, 117);
+}
+
 .modal .question {
 
     padding: 1rem 1.5rem;

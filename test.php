@@ -136,7 +136,7 @@
           <h1>Hier komt het spel</h1>
         </div>
         <div class="leren" style="display: none;">
-          <h1>Hier komen de teksten voor docenten</h1>
+          <h3>Wil je meer weten of leren over Streekproducten? <br> Wat leuk! <br> Via onderstaande links kun je meer te weten komen over dit onderwerp</h3>
         </div>
       </div>
     </div>
