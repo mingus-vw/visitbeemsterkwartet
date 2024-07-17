@@ -52,8 +52,8 @@
     <img src="images/vlakje_geel.svg" alt="geel">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
-    <img src="images/beemster_vanzelfsprekend.svg">
-    <img src="images/visit_beemster.svg" alt="Visit Beemster">
+    <img src="images/vlakje_blauw.svg">
+    <img src="images/vlakje_blauw.svg" alt="Visit Beemster">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
     <img src="images/vlakje_blauw.svg" alt="blauw">
@@ -70,71 +70,67 @@
         <div class="modal-header">
           <img src="images/streekproducten.svg" alt="Logo" class="modal-logo">
           <h1 class="modal-title" id="streekproductenLabel">Streekproducten</h1>
-          <div class="modal-buttons">
-            <button class="btn btn-secondary" type="button" id="informatieButton_streekproducten">INFO</button>
-            <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">SPEL</button>
-            <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">LEER</button>
-          </div>
+          
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- This is where the cards are put in -->
-          <div class="row">
-            <!-- Voorbeeld voor de kaart met aardappelen -->
-            <div class="col-sm-6">
-              <div class="card clickable-card" style="width: 16rem;" id="cardAardappelen">
+    <div class="modal-buttons">
+        <button class="btn btn-secondary" type="button" id="informatieButton_streekproducten">INFO</button>
+        <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">SPEL</button>
+        <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">LEER</button>
+    </div>
+    <div class="row">
+        <!-- Voorbeeld voor de kaart met aardappelen -->
+        <div class="col-sm-6">
+            <div class="card clickable-card" style="width: 16rem;" id="cardAardappelen">
                 <div class="clickable-overlay"></div>
                 <img class="card-img-top" src="images/aardappelen.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Aardappelen</h5>
-                  <div class="card-text content">
-                    Verschillende soorten aardappel worden al ruim 400 jaar geteeld. Uniek is het soort BeemsterValery, een
-                    puur aardappeltje alleen gepoot en geoogst in de Beemster.
-                  </div>
+                    <h5 class="card-title">Aardappelen</h5>
+                    <div class="card-text content">
+                        Verschillende soorten aardappel worden al ruim 400 jaar geteeld. Uniek is het soort BeemsterValery, een puur aardappeltje alleen gepoot en geoogst in de Beemster.
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKaas">
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="width: 16rem;" id="cardKaas">
                 <img class="card-img-top" src="images/kaas.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Kaas</h5>
-                  <div class="card-text content">
-                    Beemsterkaas van de Cono kaasmakerij is &quot;wereldberoemd&quot; en gemaakt van uitsluitend melk van koeien
-                    die in de Beemster grazen. De kaas wordt niet alleen in Nederland verkocht maar ook wereldwijd
-                    geëxporteerd. Ook is er echte boerenkaas van kaasboerderij Groot.
-                  </div>
+                    <h5 class="card-title">Kaas</h5>
+                    <div class="card-text content">
+                        Beemsterkaas van de Cono kaasmakerij is &quot;wereldberoemd&quot; en gemaakt van uitsluitend melk van koeien die in de Beemster grazen. De kaas wordt niet alleen in Nederland verkocht maar ook wereldwijd geëxporteerd. Ook is er echte boerenkaas van kaasboerderij Groot.
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardFruit">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="width: 16rem;" id="cardFruit">
                 <img class="card-img-top" src="images/fruit.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Fruit</h5>
-                  <div class="card-text content">
-                    Diverse rassen appels, peren en kersen worden met name in de Zuidoostbeemster geteeld.
-                    Voorjaar siert de vele bloesems dit gebied.
-                  </div>
+                    <h5 class="card-title">Fruit</h5>
+                    <div class="card-text content">
+                        Diverse rassen appels, peren en kersen worden met name in de Zuidoostbeemster geteeld. Voorjaar siert de vele bloesems dit gebied.
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-sm-6">
-              <div class="card" style="width: 16rem;" id="cardKnoflook">
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="width: 16rem;" id="cardKnoflook">
                 <img class="card-img-top" src="images/knoflook.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Knoflook</h5>
-                  <div class="card-text content">
-                    Pure, authentieke en unieke knoflook wordt verbouwd op de Beemsterklei.
-                  </div>
+                    <h5 class="card-title">Knoflook</h5>
+                    <div class="card-text content">
+                        Pure, authentieke en unieke knoflook wordt verbouwd op de Beemsterklei.
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
+    </div>
+</div>
+
         <!-- Game part of the modal -->
         <div class="question" style="display: none;">
           <h1>Hier komt het spel</h1>
@@ -152,7 +148,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <img src="images/werelderfgoed.svg" alt="Logo" class="modal-logo">
-          <h1 class="modal-title" id="wereld_erfgoedLabel">Wereld Erfgoed</h1>
+          <h1 class="modal-title" id="wereld_erfgoedLabel">Werelderfgoed</h1>
           <div class="modal-buttons">
             <!-- Buttons to switch from information to game view -->
             <button class="btn btn-success" type="button" id="informatieButton_wereld_erfgoed">
@@ -639,93 +635,75 @@
   <!-- Javascript for changing the modal from information to game view, and to show and hide the text from the cards -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      function setupModal(modalId, informatieButtonId, spelButtonId, leerButtonId) {
-        const modal = document.getElementById(modalId);
-        const informatieButton = modal.querySelector(`#${informatieButtonId}`);
-        const spelButton = modal.querySelector(`#${spelButtonId}`);
-        const leerButton = modal.querySelector(`#${leerButtonId}`);
-        const cards = modal.querySelectorAll('.card');
-        const question = modal.querySelector('.question');
-        const leren = modal.querySelector('.leren');
+  document.addEventListener("DOMContentLoaded", function() {
+  // Functie om de modale inhoud op te zetten met klikbare kaarten
+  function setupClickableCards(cards, modal) {
+    cards.forEach(function(card) {
+      card.addEventListener('click', function() {
+        const imgSrc = card.querySelector('.card-img-top').src;
+        const cardTitle = card.querySelector('.card-title').innerText;
+        const cardText = card.querySelector('.card-text').innerText;
 
-        informatieButton.addEventListener('click', function() {
-          showCards(cards);
-          hideQuestion(question);
-          hideLeren(leren);
-        });
+        const modalBody = modal.querySelector('.modal-body');
+        modalBody.innerHTML = `
+          <div class="card-body">
+            <img class="card-img-top" src="${imgSrc}" alt="Card image cap">
+            <h5 class="card-title">${cardTitle}</h5>
+            <div class="card-text content">${cardText}</div>
+          </div>
+        `;
 
-        spelButton.addEventListener('click', function() {
-          hideCards(cards);
-          showQuestion(question);
-          hideLeren(leren);
-        });
-
-        leerButton.addEventListener('click', function() {
-          hideCards(cards);
-          hideQuestion(question);
-          showLeren(leren);
-        });
-
-        function showCards(cards) {
-          cards.forEach(function(card) {
-            card.style.display = 'block';
-          });
-        }
-
-        function hideCards(cards) {
-          cards.forEach(function(card) {
-            card.style.display = 'none';
-          });
-        }
-
-        function showQuestion(question) {
-          question.style.display = 'block';
-        }
-
-        function hideQuestion(question) {
-          question.style.display = 'none';
-        }
-
-        function showLeren(leren) {
-          leren.style.display = 'block';
-        }
-
-        function hideLeren(leren) {
-          leren.style.display = 'none';
-        }
-      }
-
-      setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten', 'leerButton_streekproducten');
-      setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed', 'leerButton_wereld_erfgoed');
-      setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen', 'leerButton_bijzondere_gebouwen');
-      setupModal('histfiguren', 'informatieButton_histfiguren', 'spelButton_histfiguren', 'leerButton_histfiguren');
-      setupModal('waterbeheer', 'informatieButton_waterbeheer', 'spelButton_waterbeheer', 'leerButton_waterbeheer');
-      setupModal('kerken', 'informatieButton_kerken', 'spelButton_kerken', 'leerButton_kerken');
-      setupModal('boerderijen', 'informatieButton_boerderijen', 'spelButton_boerderijen', 'leerButton_boerderijen');
-
-      const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-      toggleButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          const card = this.closest('.card');
-          const otherCards = document.querySelectorAll('.card:not(.expanded)');
-
-          card.classList.toggle('expanded');
-
-          otherCards.forEach(function(otherCard) {
-            otherCard.classList.toggle('pushed');
-          });
-
-          if (card.classList.contains('expanded')) {
-            this.textContent = 'Lees minder';
-          } else {
-            this.textContent = 'Lees meer';
-          }
-        });
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
       });
     });
-  </script>
+  }
+
+  // Functie om de modale setup uit te voeren
+  function setupModal(modalId, informatieButtonId, spelButtonId, leerButtonId) {
+    const modal = document.getElementById(modalId);
+    const cards = modal.querySelectorAll('.card');
+    const modalBody = modal.querySelector('.modal-body');
+    const question = modal.querySelector('.question');
+    const leren = modal.querySelector('.leren');
+
+    setupClickableCards(cards, modal);
+
+    // Event listeners voor de knoppen buiten de modale inhoud
+    const informatieButton = document.getElementById(informatieButtonId);
+    const spelButton = document.getElementById(spelButtonId);
+    const leerButton = document.getElementById(leerButtonId);
+
+    informatieButton.addEventListener('click', function() {
+      modalBody.style.display = 'flex';
+      question.style.display = 'none';
+      leren.style.display = 'none';
+    });
+
+    spelButton.addEventListener('click', function() {
+      modalBody.style.display = 'none';
+      question.style.display = 'block';
+      leren.style.display = 'none';
+    });
+
+    leerButton.addEventListener('click', function() {
+      modalBody.style.display = 'none';
+      question.style.display = 'none';
+      leren.style.display = 'block';
+    });
+  }
+
+  // Roep setupModal aan voor elk modaal venster
+  setupModal('streekproducten', 'informatieButton_streekproducten', 'spelButton_streekproducten', 'leerButton_streekproducten');
+  setupModal('wereld_erfgoed', 'informatieButton_wereld_erfgoed', 'spelButton_wereld_erfgoed', 'leerButton_wereld_erfgoed');
+  setupModal('bijzondere_gebouwen', 'informatieButton_bijzondere_gebouwen', 'spelButton_bijzondere_gebouwen', 'leerButton_bijzondere_gebouwen');
+  setupModal('histfiguren', 'informatieButton_histfiguren', 'spelButton_histfiguren', 'leerButton_histfiguren');
+  setupModal('waterbeheer', 'informatieButton_waterbeheer', 'spelButton_waterbeheer', 'leerButton_waterbeheer');
+  setupModal('kerken', 'informatieButton_kerken', 'spelButton_kerken', 'leerButton_kerken');
+  setupModal('boerderijen', 'informatieButton_boerderijen', 'spelButton_boerderijen', 'leerButton_boerderijen');
+});
+
+</script>
 
 
 

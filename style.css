@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
@@ -99,7 +99,7 @@ body {
 .modal-logo {
     max-height: 130px;
     position: absolute;
-    top: 78px;
+    top: 25px;
     left: 25px;
 }
 
@@ -165,9 +165,12 @@ body {
     display: block;
 }
 
-.modal .btn {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
+.modal-buttons {
+    margin-bottom: 20px; /* Verhoogde marge om wat ruimte te creëren */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Optioneel: ruimte tussen de knoppen */
+    width: 100%; /* Zorg ervoor dat de knoppen de volledige breedte benutten */
 }
 
 #streekproducten .card-body {
@@ -243,9 +246,9 @@ body {
 .clickable-card {
     position: relative;
 
-  }
-  
-  .clickable-overlay {
+}
+
+.clickable-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -253,14 +256,13 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .clickable-card:hover .clickable-overlay {
+}
+
+.clickable-card:hover .clickable-overlay {
     opacity: 1;
-  }
-  
-  .clickable-card:hover {
+}
+
+.clickable-card:hover {
     cursor: pointer;
-    transform: scale(1.05); /* Optioneel: vergroot de kaart bij hover */
-  }
-  
+    transform: scale(1.05);
+}
