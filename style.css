@@ -60,7 +60,7 @@ body {
     background-color: #99cc33;
 }
 
-#wereld_erfgoed .modal-header {
+#werelderfgoed .modal-header {
     background-color: #339933;
 }
 
@@ -166,18 +166,18 @@ body {
 }
 
 .modal-buttons {
-    margin-bottom: 20px; /* Verhoogde marge om wat ruimte te creëren */
+    margin-bottom: 20px; 
     display: flex;
     justify-content: center;
-    gap: 10px; /* Optioneel: ruimte tussen de knoppen */
-    width: 100%; /* Zorg ervoor dat de knoppen de volledige breedte benutten */
+    gap: 8px; 
+    width: 100%; 
 }
 
 #streekproducten .card-body {
     background-color: #99cc33;
 }
 
-#wereld_erfgoed .card-body {
+#werelderfgoed .card-body {
     background-color: #339933;
 }
 
@@ -219,7 +219,6 @@ body {
 }
 
 .modal .question {
-
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
@@ -228,7 +227,6 @@ body {
 }
 
 .modal .leren {
-
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
