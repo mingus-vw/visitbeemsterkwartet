@@ -135,7 +135,7 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <div class="modal-buttons">
             <button class="btn btn-secondary" type="button" id="kwartetButton_streekproducten">KWARTET</button>
             <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">SPEL</button>
@@ -143,13 +143,13 @@
           </div>
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <div class="modal-buttons">
             <button class="btn btn-secondary" type="button" id="kwartetButton_streekproducten">KWARTET</button>
             <button class="btn btn-secondary" type="button" id="spelButton_streekproducten">SPEL</button>
             <button class="btn btn-secondary" type="button" id="leerButton_streekproducten">LEER</button>
           </div>
-          <h3>Wil je meer weten of leren over Streekproducten? <br> Wat leuk! <br> Via onderstaande links kun je meer te
+          <h3>Wil je meer weten of leer over Streekproducten? <br> Wat leuk! <br> Via onderstaande links kun je meer te
             weten komen over dit onderwerp</h3>
         </div>
       </div>
@@ -224,10 +224,10 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <a href="https://www.werelderfgoed.nl/nl/onderwijs/quiz" target="_blank">Unesco Werelderfgoed Quiz</a>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <a href="https://www.werelderfgoed.nl/nl/onderwijs" target="_blank">Unesco Werelderfgoed</a>
         </div>
       </div>
@@ -301,10 +301,10 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <h1>Leer tekst van de modal</h1>
         </div>
       </div>
@@ -374,10 +374,10 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <h1>Hier komen de teksten voor docenten</h1>
         </div>
       </div>
@@ -450,11 +450,11 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
-          <a href="https://www.hhnk.nl/leren-over-water" target="_blank">Leren over water</a>
+        <div class="leer" style="display: none;">
+          <a href="https://www.hhnk.nl/leer-over-water" target="_blank">leer over water</a>
         </div>
       </div>
     </div>
@@ -526,10 +526,10 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <h1>Hier komen de teksten voor docenten</h1>
         </div>
       </div>
@@ -602,10 +602,10 @@
           </div>
         </div>
         <!-- Game part of the modal -->
-        <div class="question" style="display: none;">
+        <div class="spel" style="display: none;">
           <h1>Hier komt het spel</h1>
         </div>
-        <div class="leren" style="display: none;">
+        <div class="leer" style="display: none;">
           <a href="https://www.boerderijenstichting.nl/voorlichting/leskist/" target="_blank">Boerderijen educatie</a>
         </div>
       </div>
@@ -646,8 +646,8 @@
         const modal = document.getElementById(modalId);
         const cards = modal.querySelectorAll('.card');
         const modalBody = modal.querySelector('.modal-body');
-        const question = modal.querySelector('.question');
-        const leren = modal.querySelector('.leren');
+        const spel = modal.querySelector('.spel');
+        const leer = modal.querySelector('.leer');
 
         setupClickableCards(cards, modal);
 
@@ -658,20 +658,20 @@
 
         kwartetButton.addEventListener('click', function () {
           modalBody.style.display = 'flex';
-          question.style.display = 'none';
-          leren.style.display = 'none';
+          spel.style.display = 'none';
+          leer.style.display = 'none';
         });
 
         spelButton.addEventListener('click', function () {
           modalBody.style.display = 'none';
-          question.style.display = 'block';
-          leren.style.display = 'none';
+          spel.style.display = 'block';
+          leer.style.display = 'none';
         });
 
         leerButton.addEventListener('click', function () {
           modalBody.style.display = 'none';
-          question.style.display = 'none';
-          leren.style.display = 'block';
+          spel.style.display = 'none';
+          leer.style.display = 'block';
         });
       }
 
