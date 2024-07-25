@@ -1,4 +1,3 @@
-/* Styling for the Rhombuses and the modal with the cards. */
 body {
     font-family: arial;
     font-size: 16px;
@@ -50,7 +49,6 @@ body {
 .modal .modal-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #dee2e6;
     padding: 1rem 1.5rem;
     position: relative;
@@ -92,7 +90,6 @@ body {
 
 .modal .modal-header h1 {
     text-align: center;
-    /* Centreer de titel */
     color: white;
 }
 
@@ -112,7 +109,7 @@ body {
 
 
 .modal .modal-dialog {
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .modal-foto {
@@ -166,11 +163,11 @@ body {
 }
 
 .modal-buttons {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    gap: 8px; 
-    width: 100%; 
+    gap: 8px;
+    width: 100%;
 }
 
 #streekproducten .card-body {
@@ -222,7 +219,6 @@ body {
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
-    /* Center de tekst horizontaal */
     font-weight: bold;
 }
 
@@ -230,11 +226,9 @@ body {
     padding: 1rem 1.5rem;
     border-top: 1px solid #dee2e6;
     text-align: center;
-    /* Center de tekst horizontaal */
     font-weight: bold;
 }
 
-/* Card content toggling */
 .card .toggle-btn {
     display: block;
     width: 100%;
