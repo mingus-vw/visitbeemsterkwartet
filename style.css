@@ -82,6 +82,30 @@ body {
     background-color: #009999;
 }
 
+#dorpen .modal-header {
+    background-color: #cc0099;
+}
+
+#waterlinies .modal-header {
+    background-color: #336699;
+}
+
+#tuinen .modal-header {
+    background-color: #663333;
+}
+
+#dieren .modal-header {
+    background-color: #cc0033;
+}
+
+#kleuren .modal-header {
+    background-color: #ff8300;
+}
+
+#wegen .modal-header {
+    background-color: #7b0083;
+}
+
 .modal-header {
     display: flex;
     flex-direction: column;
@@ -196,6 +220,30 @@ body {
 
 #boerderijen .card-body {
     background-color: #009999;
+}
+
+#dorpen .card-body {
+    background-color: #cc0099;
+}
+
+#waterlinies .card-body {
+    background-color: #336699;
+}
+
+#tuinen .card-body {
+    background-color: #663333;
+}
+
+#dieren .card-body {
+    background-color: #cc0033;
+}
+
+#kleuren .card-body {
+    background-color: #ff8300;
+}
+
+#wegen .card-body {
+    background-color: #7b0083;
 }
 
 .modal-title {
